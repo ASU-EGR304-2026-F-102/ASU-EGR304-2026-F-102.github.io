@@ -26,7 +26,7 @@ This website documents the complete development of Project Aurora. Readers can u
 
 | **Team Member**        |**Ind Datasheet Links** |
 | ---------------------- | -----------------------|
-| Sam Kholmuminov                | [Sam GitHub](https://github.com/noblechief117/noblechief117.github.io.git) |
-| Natalia Castillo-Diaz                | [Natalia GitHub](https://njcasti6.github.io/njcasti6__EGR304_F26.github.io/) |
-| Taylor Callo               |[Taylor GitHub] (https://tcallo.github.io/tcallo_EGR304_F26.github.io/)|
-| Arya                | link |
+| Sam Kholmuminov | [Sam Datasheet](https://noblechief117.github.io/) |
+| Natalia Castillo-Diaz | [Natalia Datasheet](https://njcasti6.github.io/njcasti6__EGR304_F26.github.io/) |
+| Taylor Callo | [Taylor Datasheet](https://tcallo.github.io/tcallo_EGR304_F26.github.io/) |
+| Arya Padiyar | [Arya Datasheet](https://pxdiyar.github.io/aryapadiyar.github.io/) |
