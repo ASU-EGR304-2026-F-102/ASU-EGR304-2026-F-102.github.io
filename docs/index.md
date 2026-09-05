@@ -28,5 +28,5 @@ This website documents the complete development of Project Aurora. Readers can u
 | ---------------------- | -----------------------|
 | Sam Kholmuminov                | [Sam GitHub](https://github.com/noblechief117/noblechief117.github.io.git) |
 | Natalia Castillo-Diaz                | [Natalia GitHub](https://njcasti6.github.io/njcasti6__EGR304_F26.github.io/) |
-| Taylor Callo               |[Taylor GitHub] https://tcallo.github.io/tcallo_EGR304_F26.github.io/|
-| Name #4                | link |
+| Taylor Callo               |[Taylor GitHub] (https://tcallo.github.io/tcallo_EGR304_F26.github.io/)|
+| Arya                | link |
