@@ -1,6 +1,6 @@
-site_name: EGR304 Team Report Template
-site_url: https://embedded-systems-design.github.io/EGR304TeamTemplate
-repo_url: https://github.com/embedded-systems-design/EGR304TeamTemplate
+site_name: Project Aurora - EGR 304 Team 102 Report
+site_url: https://asu-egr304-2026-f-102.github.io
+repo_url: https://github.com/ASU-EGR304-2026-F-102/ASU-EGR304-2026-F-102.github.io
 edit_uri: edit/main/docs/
 theme:
   name: material
@@ -59,7 +59,7 @@ extra_javascript:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2025 team-name-here"
+copyright: "Copyright &copy; 2025 EGR 304 Team 102"
 
 extra:
   generator: false
