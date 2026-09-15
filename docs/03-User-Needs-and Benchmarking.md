@@ -84,7 +84,7 @@ This product gave us **20 user needs: 14 explicit and 6 latent**. Explicit needs
 
 #### 4. [28-Day (1X) Automatic Pill Dispenser (Expandable Tray)](https://www.amazon.com/Ideerfit-28-Day-Automatic-Dispenser-Device/dp/B0FD9XCZBH/ref=sr_1_5?crid=undefined&th=1)
 
-![Ideerfit Automatic Pill Dispenser](docs/image/28automatic-pill-dispenser.jpg.jpg)
+![Ideerfit Automatic Pill Dispenser](image/28automatic-pill-dispenser.jpg.jpg)
 
 - **Price:** $269.99
 - **Vendor:** Amazon.
