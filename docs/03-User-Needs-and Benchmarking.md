@@ -335,7 +335,89 @@ This product gave us **24 user needs**. Explicit needs come directly from custom
 23. The controls are easy to understand for users with memory or cognitive difficulties. **(Explicit)**
 24. The device minimizes confusion during normal medication use. **(Latent)**
 
-#### 5. Next Product goes here
+#### X. [TimerCap Medication Timer Cap and Pill Bottles](https://www.amazon.com/TimerCap-Automatically-Displays-Opened-Built/dp/B0BN4P2NF4/)
+
+![TimerCap Medication Timer Cap](image/YOUR-TIMERCAP-IMAGE-FILENAME.jpg)
+
+- **Vendor:** Amazon.
+- **Brand:** TimerCap.
+- **Product:** Medication Timer Cap and Pill Bottle System.
+- **Price:** [Enter current Amazon price]
+- **Rating:** [Enter current Amazon rating]
+- **Description:** A medication bottle system with an electronic timer built into the cap. Each time the bottle is opened, the timer resets and then displays how long it has been since the bottle was last opened, helping users remember whether they may have already taken their medication.
+- **Connection to our project:** This product relates to our Medication Guardian because it tracks when medication was last accessed without requiring alarms or complicated controls, while its battery, durability, and reliability problems show areas our design could improve.
+
+##### Positive Comments
+
+The following positive comments come from Amazon customer reviews.
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **5 stars, “Game changer for ADHD,” October 24, 2025:** “These are the BEST way I’ve found to keep track of my medication doses.” | 1. The device helps users keep track of medication doses. **(Explicit)** |
+|  | 2. The device helps users remember whether medication has already been taken. **(Latent)** |
+|  | 3. The device supports users who have difficulty remembering medication routines. **(Latent)** |
+| **OoTLink, 5 stars, “I love these things!”, March 24, 2024:** “There’s a small screen that displays how long it’s been since you last opened the jar. No buttons, no alarms, just a simple timer.” | 4. The device clearly displays how long it has been since medication was last accessed. **(Explicit)** |
+|  | 5. The device is simple to operate without unnecessary controls. **(Explicit)** |
+|  | 6. The device provides useful medication information at a glance. **(Latent)** |
+| **5 stars, “These are a LIFE SAVER literally!!”, September 14, 2023:** “Ever wondered ‘Did I take my meds today?’ or ‘When did I last take my meds?’ These amazing pill bottles will answer either of those at a glance!” | 7. The device helps users determine whether medication may have already been taken. **(Explicit)** |
+|  | 8. The device makes medication status quick and easy to understand. **(Explicit)** |
+|  | 9. The device reduces uncertainty about medication timing. **(Latent)** |
+| **5 stars, “Game changer for ADHD,” October 24, 2025:** “These hold up well despite frequent use. I’ve been using them for about 4 years.” | 10. The device withstands repeated everyday use. **(Explicit)** |
+|  | 11. The device remains functional over long periods of time. **(Latent)** |
+
+##### Negative Comments
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **1 star, “3 of the four timer caps did not work,” February 20, 2025:** “One cap worked intermittently... and the other two I tried did not work at all.” | 12. The device works reliably when first purchased. **(Explicit)** |
+|  | 13. The device operates consistently without intermittent failures. **(Explicit)** |
+|  | 14. The product has consistent manufacturing quality between units. **(Latent)** |
+| **1 star, “Dont Not Buy,” March 29, 2025:** “2 came totally dead. 1 worked a time or 2 then stopped working at all.” | 15. The device arrives functional and ready for use. **(Explicit)** |
+|  | 16. The device continues working after repeated use. **(Explicit)** |
+|  | 17. The device has dependable electrical connections. **(Latent)** |
+| **1 star, “be prepared several will fail,” April 16, 2025:** “One cap did not work... A week later a second one has failed.” | 18. The device provides reliable long-term operation. **(Explicit)** |
+|  | 19. The device uses durable electronic components. **(Latent)** |
+|  | 20. The device undergoes sufficient quality control before being sold. **(Latent)** |
+
+##### Additional Comments
+
+These reviews also provide useful information about battery maintenance and usability.
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **OoTLink, 5 stars, March 24, 2024:** “The single biggest improvement would be to make it easier to change the battery.” | 21. The battery is easy for users to replace. **(Explicit)** |
+|  | 22. The device can be maintained without complicated disassembly. **(Latent)** |
+| **5 stars, “Game changer for ADHD,” October 24, 2025:** The reviewer said only one cap had stopped working after several years and switched to a backup timer cap. | 23. The device provides dependable service over long-term use. **(Explicit)** |
+|  | 24. The product allows users to continue tracking medication even if one unit fails. **(Latent)** |
+
+##### Compiled List of User Needs
+
+This product gave us **24 user needs**. Explicit needs come directly from customer comments, while latent needs are inferred from the experiences and problems customers described.
+
+1. The device helps users keep track of medication doses. **(Explicit)**
+2. The device helps users remember whether medication has already been taken. **(Latent)**
+3. The device supports users who have difficulty remembering medication routines. **(Latent)**
+4. The device clearly displays how long it has been since medication was last accessed. **(Explicit)**
+5. The device is simple to operate without unnecessary controls. **(Explicit)**
+6. The device provides useful medication information at a glance. **(Latent)**
+7. The device helps users determine whether medication may have already been taken. **(Explicit)**
+8. The device makes medication status quick and easy to understand. **(Explicit)**
+9. The device reduces uncertainty about medication timing. **(Latent)**
+10. The device withstands repeated everyday use. **(Explicit)**
+11. The device remains functional over long periods of time. **(Latent)**
+12. The device works reliably when first purchased. **(Explicit)**
+13. The device operates consistently without intermittent failures. **(Explicit)**
+14. The product has consistent manufacturing quality between units. **(Latent)**
+15. The device arrives functional and ready for use. **(Explicit)**
+16. The device continues working after repeated use. **(Explicit)**
+17. The device has dependable electrical connections. **(Latent)**
+18. The device provides reliable long-term operation. **(Explicit)**
+19. The device uses durable electronic components. **(Latent)**
+20. The device undergoes sufficient quality control before being sold. **(Latent)**
+21. The battery is easy for users to replace. **(Explicit)**
+22. The device can be maintained without complicated disassembly. **(Latent)**
+23. The device provides dependable service over long-term use. **(Explicit)**
+24. The product allows users to continue tracking medication even if one unit fails. **(Latent)**
 
 
 ## Organized Need Statements
