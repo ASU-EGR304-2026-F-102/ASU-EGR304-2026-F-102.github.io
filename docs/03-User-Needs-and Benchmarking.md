@@ -191,9 +191,10 @@ https://www.amazon.com/s?k=smart+automatic+pill+dispenser+caregiver+app+remote+m
 
 ![LiveFine Auto WiFi Pill Dispenser](image/LiveFine.jpg)
 
+- **Price:** $99.99
 - **Vendor:** Amazon.
 - **Brand:** LiveFine.
-- **Product:** 28-Day Electronic Pill Dispenser.
+* **Rating:** 3.8 out of 5 stars from 578 ratings.
 - **Description:** An automatic medication dispenser with 28 daily compartments, alarms, and a locking lid, designed to help caregivers and users manage scheduled doses and avoid missed or duplicate medication.
 - **Connection to our project:** This product relates to our Medication Guardian because it uses timed reminders, caregiver notifications, dose control, and WiFi monitoring to reduce missed or repeated doses, while its connectivity, power, and alert problems show areas our design could improve.
 
@@ -260,13 +261,14 @@ This product gave us **22 user needs: 14 explicit and 8 latent**. Explicit needs
 
 
 
-#### 2. [MedCenter 31-Day Pill Organizer System with 4-Time Talking Alarm](https://www.amazon.com/MedCenter-70265-Organizer-Reminder-System)
+#### 2. [MedCenter 31-Day Pill Organizer System with 4-Time Talking Alarm](https://www.amazon.com/gp/aw/d/B000RZPL0M/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=2ec5-40e9-9b39-d65f08d6ea68%3Aamzn&th=1)
 
 ![MedCenter 31-Day Pill Organizer](image/MedCenter.jpg)
 
 - **Vendor:** Sold by MedCenter Systems, ships from Amazon.
 - **Brand:** MedCenter.
-- **Product:** 31-Day Pill Organizer System with 4-Time Talking Alarm.
+- **Price:** $94.95
+- **Rating:** 4.5 out of 5 stars from 2,079 ratings.
 - **Description:** A 31-day medication organizer with pill boxes labeled by date and time of day, including morning, noon, evening, and night. The system includes a talking alarm that can announce medication reminders up to four times per day, confirmation buttons to indicate that a dose was taken, and color-coded indicators showing whether medication has been taken. The device runs on two AA batteries.
 - **Connection to our project:** This product relates to our Medication Guardian because it uses scheduled reminders, dose confirmation, and visual organization to reduce medication mistakes, while its accessibility, setup, and safety problems show areas our design could improve.
 
