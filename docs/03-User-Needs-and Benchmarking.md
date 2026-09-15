@@ -192,7 +192,76 @@ https://www.amazon.com/s?k=smart+automatic+pill+dispenser+caregiver+app+remote+m
 
 ### Selected Products
 
-#### 3. Next Product goes here
+#### X. [LiveFine Auto WiFi Pill Dispenser for Elderly](https://www.amazon.com/gp/aw/d/B09DMFR85D/?_encoding=UTF8&pd_rd_plhd=undefined&th=1)
+
+![LiveFine Auto WiFi Pill Dispenser](image/LiveFine.jpg)
+
+- **Vendor:** Amazon.
+- **Brand:** LiveFine.
+- **Product:** 28-Day Electronic Pill Dispenser.
+- **Description:** An automatic medication dispenser with 28 daily compartments, alarms, and a locking lid, designed to help caregivers and users manage scheduled doses and avoid missed or duplicate medication.
+- **Connection to our project:** This product relates to our Medication Guardian because it uses timed reminders, caregiver notifications, dose control, and WiFi monitoring to reduce missed or repeated doses, while its connectivity, power, and alert problems show areas our design could improve.
+
+##### Positive Comments
+
+The following positive comments come from Amazon customer reviews.
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **5 stars, “A game changer. Flip the script.”:** “Compliance went from 60% to 98%.” | 1. The product significantly improves medication compliance. **(Explicit)** |
+|  | 2. The product reduces the amount of reminding required from family caregivers. **(Explicit)** |
+|  | 3. The product positively reinforces medication-taking behavior. **(Latent)** |
+| **5 stars, “Amazing for someone who forgets their pills”:** The reviewer said their mother with memory issues now takes her pills daily and that the alarm can be heard throughout the apartment even with poor hearing. | 4. The product reminds users with memory issues to take medication consistently. **(Explicit)** |
+|  | 5. The alarm is audible enough for users with hearing difficulty. **(Explicit)** |
+|  | 6. The product notifies caregivers remotely when a dose is missed. **(Explicit)** |
+|  | 7. The product makes medication management easier for users with limited dexterity. **(Latent)** |
+| **5 stars, “Works as advertised”:** The reviewer said setup was easy when the instructions were followed and explained that the battery functions as backup power rather than the primary power source. | 8. The product is easy to set up when instructions are followed. **(Explicit)** |
+|  | 9. The product clearly communicates its power and WiFi requirements. **(Latent)** |
+|  | 10. The product is appropriate for users who need medication reminders. **(Latent)** |
+
+##### Negative Comments
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **1 star, “Too many cons”:** The reviewer said the unit must remain plugged in by USB, the batteries only provide backup power, the voice feature cannot be disabled, and app notifications did not work as expected. | 11. The product runs reliably on batteries as a primary power source. **(Explicit)** |
+|  | 12. The product allows voice and audio alerts to be disabled. **(Explicit)** |
+|  | 13. The app reliably delivers the notifications it advertises. **(Explicit)** |
+|  | 14. The product does not require constant connection to a wall outlet. **(Latent)** |
+| **1 star, “Great theory but doesn't work that way”:** The reviewer reported difficult WiFi setup, unwanted nighttime voice alerts, and unreliable reconnection to the network. | 15. The product connects to and stays connected to WiFi reliably. **(Explicit)** |
+|  | 16. The product does not disrupt sleep with unwanted nighttime alerts. **(Explicit)** |
+|  | 17. The product gives caregivers confidence about whether medication was actually taken. **(Latent)** |
+|  | 18. The product reduces rather than increases caregiver stress. **(Latent)** |
+| **1 star, “ONLY works with 2.4 GHz WiFi! Returned.”:** The reviewer said the dispenser would not connect to their network and that the WiFi limitation was not clearly disclosed before purchase. | 19. The product supports modern dual-band WiFi networks. **(Explicit)** |
+|  | 20. The product clearly discloses WiFi compatibility requirements. **(Explicit)** |
+|  | 21. The product ships with functioning batteries and an accurate battery display. **(Explicit)** |
+|  | 22. The product allows users to verify compatibility before setup. **(Latent)** |
+
+##### Compiled List of User Needs
+
+This product gave us **22 user needs: 14 explicit and 8 latent**. Explicit needs come directly from customer feedback. Latent needs are inferred from the problems and experiences described by customers.
+
+1. The product significantly improves medication compliance. **(Explicit)**
+2. The product reduces the amount of reminding required from family caregivers. **(Explicit)**
+3. The product positively reinforces medication-taking behavior. **(Latent)**
+4. The product reminds users with memory issues to take medication consistently. **(Explicit)**
+5. The alarm is audible enough for users with hearing difficulty. **(Explicit)**
+6. The product notifies caregivers remotely when a dose is missed. **(Explicit)**
+7. The product makes medication management easier for users with limited dexterity. **(Latent)**
+8. The product is easy to set up when instructions are followed. **(Explicit)**
+9. The product clearly communicates its power and WiFi requirements. **(Latent)**
+10. The product is appropriate for users who need medication reminders. **(Latent)**
+11. The product runs reliably on batteries as a primary power source. **(Explicit)**
+12. The product allows voice and audio alerts to be disabled. **(Explicit)**
+13. The app reliably delivers the notifications it advertises. **(Explicit)**
+14. The product does not require constant connection to a wall outlet. **(Latent)**
+15. The product connects to and stays connected to WiFi reliably. **(Explicit)**
+16. The product does not disrupt sleep with unwanted nighttime alerts. **(Explicit)**
+17. The product gives caregivers confidence about whether medication was actually taken. **(Latent)**
+18. The product reduces rather than increases caregiver stress. **(Latent)**
+19. The product supports modern dual-band WiFi networks. **(Explicit)**
+20. The product clearly discloses WiFi compatibility requirements. **(Explicit)**
+21. The product ships with functioning batteries and an accurate battery display. **(Explicit)**
+22. The product allows users to verify compatibility before setup. **(Latent)**
 
 #### 4. Next Product goes here
 
