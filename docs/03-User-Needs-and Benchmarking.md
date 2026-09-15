@@ -82,7 +82,9 @@ This product gave us **20 user needs: 14 explicit and 6 latent**. Explicit needs
 20. The device helps keep pills clean when users remove them. **(Latent)**
 
 
-#### 4. [28-Day(1X) Automatic Pill Dispenser (Expandable Tray)]([https://www.amazon.com/dp/B0BL2BJ24F](https://www.amazon.com/Ideerfit-28-Day-Automatic-Dispenser-Device/dp/B0FD9XCZBH/ref=sr_1_5?crid=undefined&th=1))
+#### 4. [28-Day (1X) Automatic Pill Dispenser (Expandable Tray)](https://www.amazon.com/Ideerfit-28-Day-Automatic-Dispenser-Device/dp/B0FD9XCZBH/ref=sr_1_5?crid=undefined&th=1)
+
+![Ideerfit Automatic Pill Dispenser](PASTE-IMAGE-LINK-HERE)
 
 - **Price:** $269.99
 - **Vendor:** Amazon.
@@ -90,6 +92,8 @@ This product gave us **20 user needs: 14 explicit and 6 latent**. Explicit needs
 - **Rating:** 4.1 out of 5 stars from 1,108 ratings.
 - **Description:** An electronic medication dispenser designed to release scheduled doses, provide audible reminders, track dose activity, and allow caregivers to monitor medication use through an app. The system can also support remote dispensing and notifications.
 - **Connection to our project:** This product relates to our project because it uses automatic dispensing, dose tracking, caregiver notifications, and remote monitoring to improve medication adherence, while showing problems with setup, connectivity, scheduling flexibility, and backup power that our Medication Guardian could improve.
+
+##### Positive Comments
 
 ##### Positive Comments
 
