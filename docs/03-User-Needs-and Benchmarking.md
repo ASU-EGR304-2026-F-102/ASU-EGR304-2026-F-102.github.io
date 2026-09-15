@@ -82,7 +82,92 @@ This product gave us **20 user needs: 14 explicit and 6 latent**. Explicit needs
 20. The device helps keep pills clean when users remove them. **(Latent)**
 
 
-#### 2. Next Product goes here
+#### 4. [28-Day(1X) Automatic Pill Dispenser (Expandable Tray)]([https://www.amazon.com/dp/B0BL2BJ24F](https://www.amazon.com/Ideerfit-28-Day-Automatic-Dispenser-Device/dp/B0FD9XCZBH/ref=sr_1_5?crid=undefined&th=1))
+
+- **Price:** $269.99
+- **Vendor:** Amazon.
+- **Brand:** Ideerfit.
+- **Rating:** 4.1 out of 5 stars from 1,108 ratings.
+- **Description:** An electronic medication dispenser designed to release scheduled doses, provide audible reminders, track dose activity, and allow caregivers to monitor medication use through an app. The system can also support remote dispensing and notifications.
+- **Connection to our project:** This product relates to our project because it uses automatic dispensing, dose tracking, caregiver notifications, and remote monitoring to improve medication adherence, while showing problems with setup, connectivity, scheduling flexibility, and backup power that our Medication Guardian could improve.
+
+##### Positive Comments
+
+The following positive comments come from Amazon customer reviews.
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **Mike, 5 stars, August 11, 2025:** “It was easy to setup by anyone who can read the screen.” | 1. The device is easy to set up. **(Explicit)** |
+|  | 2. The device has controls that are easy to understand. **(Latent)** |
+|  | 3. The device requires minimal technical knowledge to configure. **(Latent)** |
+| **Mike, 5 stars, August 11, 2025:** “The app tells you if a dose was missed.” | 4. The device identifies when a scheduled dose has been missed. **(Explicit)** |
+|  | 5. The device clearly communicates medication status to users or caregivers. **(Latent)** |
+|  | 6. The device allows medication activity to be monitored remotely. **(Latent)** |
+| **sk, 5 stars, July 21, 2026:** “The unit has been reliable; the customer support has been superb.” | 7. The device operates reliably during normal use. **(Explicit)** |
+|  | 8. Users have access to helpful support when problems occur. **(Explicit)** |
+| **ACH of MA, 4 stars, December 23, 2025:** “Our parent with dementia has been able to take their medication without any effort or error.” | 9. The device makes medication management easy for the intended user. **(Explicit)** |
+|  | 10. The device helps reduce medication-taking errors. **(Explicit)** |
+|  | 11. The device reduces the amount of caregiver assistance required. **(Latent)** |
+
+##### Negative Comments
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **stacey richards, 2 stars, September 9, 2026:** “I cant even figure out how to set it up, even after reading the instructions.” | 12. The device is easy to configure. **(Explicit)** |
+|  | 13. The setup instructions are clear and easy to follow. **(Explicit)** |
+|  | 14. The device requires minimal outside help to set up. **(Latent)** |
+| **Verified Purchase, January 25, 2026:** “Device network connection is unstable.” | 15. The device maintains a reliable network connection. **(Explicit)** |
+|  | 16. The device continues its important functions when the network connection is lost. **(Latent)** |
+| **Verified Purchase, January 25, 2026:** “It misses recording doses taken.” | 17. The device accurately records medication events. **(Explicit)** |
+|  | 18. Caregivers can trust the medication history shown by the device. **(Latent)** |
+| **A.J., 1 star, January 29, 2026:** “You can program once, twice, and thrice a day.” | 19. The device supports more than three medication times per day. **(Explicit)** |
+|  | 20. The device accommodates different medication schedules and changing user needs. **(Latent)** |
+
+##### Additional Comments
+
+These reviews provide additional information about remote dispensing, battery backup, and the mobile app.
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **Mike, 5 stars, August 11, 2025:** “Remote dispensing works like a charm.” | 21. The device allows medication to be dispensed remotely when needed. **(Explicit)** |
+| **Mike, 5 stars, August 11, 2025:** “The battery backup could be better.” | 22. The device provides reliable backup power. **(Explicit)** |
+|  | 23. The device continues operating during a loss of wall power. **(Latent)** |
+| **Verified Purchase, January 25, 2026:** The reviewer said remote dispensing could occur even when the pill tray was not inserted. | 24. The device verifies that the medication tray is installed before dispensing. **(Explicit)** |
+|  | 25. The device prevents medication from being accidentally dropped or lost. **(Latent)** |
+| **ACH of MA, 4 stars, December 23, 2025:** “The app could use improved status display.” | 26. The medication status is easy to understand in the app. **(Explicit)** |
+|  | 27. Important medication information is easy to locate. **(Latent)** |
+
+##### Compiled List of User Needs
+
+This product gave us **27 user needs: 16 explicit and 11 latent**. Explicit needs come directly from customer comments. Latent needs are inferred from the problems and experiences described by customers.
+
+1. The device is easy to set up. **(Explicit)**
+2. The device has controls that are easy to understand. **(Latent)**
+3. The device requires minimal technical knowledge to configure. **(Latent)**
+4. The device identifies when a scheduled dose has been missed. **(Explicit)**
+5. The device clearly communicates medication status to users or caregivers. **(Latent)**
+6. The device allows medication activity to be monitored remotely. **(Latent)**
+7. The device operates reliably during normal use. **(Explicit)**
+8. Users have access to helpful support when problems occur. **(Explicit)**
+9. The device makes medication management easy for the intended user. **(Explicit)**
+10. The device helps reduce medication-taking errors. **(Explicit)**
+11. The device reduces the amount of caregiver assistance required. **(Latent)**
+12. The device is easy to configure. **(Explicit)**
+13. The setup instructions are clear and easy to follow. **(Explicit)**
+14. The device requires minimal outside help to set up. **(Latent)**
+15. The device maintains a reliable network connection. **(Explicit)**
+16. The device continues its important functions when the network connection is lost. **(Latent)**
+17. The device accurately records medication events. **(Explicit)**
+18. Caregivers can trust the medication history shown by the device. **(Latent)**
+19. The device supports more than three medication times per day. **(Explicit)**
+20. The device accommodates different medication schedules and changing user needs. **(Latent)**
+21. The device allows medication to be dispensed remotely when needed. **(Explicit)**
+22. The device provides reliable backup power. **(Explicit)**
+23. The device continues operating during a loss of wall power. **(Latent)**
+24. The device verifies that the medication tray is installed before dispensing. **(Explicit)**
+25. The device prevents medication from being accidentally dropped or lost. **(Latent)**
+26. The medication status is easy to understand in the app. **(Explicit)**
+27. Important medication information is easy to locate. **(Latent)**
 
 ### Search #2
 
