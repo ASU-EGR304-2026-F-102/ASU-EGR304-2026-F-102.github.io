@@ -426,13 +426,193 @@ This product gave us **24 user needs**. Explicit needs come directly from custom
 
 ### First Placement
 
-### Grouped with categories
+Each user need identified during benchmarking was placed on an individual sticky note. At this stage, the needs were not grouped or ranked. Duplicate and similar needs from different products were kept so that common customer concerns could be identified.
+
+![Initial placement of user needs](image/user-needs-first-placement.jpg)
+
+### Grouped with Categories
+
+After the initial placement, similar needs were grouped together. Repeated needs were combined and revised into broader user-need statements. Each category was also given a **meta need** describing the overall goal of that group.
+
+| Category | Meta Need |
+| --- | --- |
+| Medication Safety and Adherence | **The product helps users take the correct medication safely and consistently.** |
+| Reminders and Status Feedback | **The product clearly communicates when medication should be taken and its current status.** |
+| Ease of Use and Setup | **The product is simple to understand, configure, and operate.** |
+| Accessibility | **The product can be used comfortably by people with different physical and cognitive abilities.** |
+| Reliability and Accuracy | **The product performs its medication-management functions consistently and accurately.** |
+| Caregiver Support and Monitoring | **The product helps caregivers monitor medication use without creating unnecessary work.** |
+| Scheduling and Flexibility | **The product adapts to different medication schedules and changing user needs.** |
+| Power and Connectivity | **The product continues performing essential functions despite power or communication problems.** |
+| Physical Design, Security, and Refilling | **The product stores and provides medication safely while remaining easy to handle and refill.** |
+| Maintenance, Cost, and Support | **The product is practical to own, maintain, and support over its useful life.** |
+
+![User needs grouped into categories](image/user-needs-grouped.jpg)
 
 ### Ranked
 
-## Compiled list of user Needs
+The team ranked each need using customer-review frequency, safety impact, effect on medication adherence, and team judgment.
 
-1. The device will...
-1. The device is ...
-1. The device can ...
-100. The device is...
+The following priority scale was used:
+
+- **5 - Critical:** Necessary for safe and successful operation.
+- **4 - High:** Strongly affects usability and effectiveness.
+- **3 - Medium:** Important but not required for the main function.
+- **2 - Low:** Helpful improvement with less effect on core operation.
+- **1 - Nice to Have:** Adds convenience but has little effect on core performance.
+
+![Ranked user needs](image/user-needs-ranked.jpg)
+
+## Compiled List of User Needs
+
+After grouping similar statements and removing duplicates, the benchmarking process resulted in the following **100 unique user needs**.
+
+### Medication Safety and Adherence
+
+**Meta Need: The product helps users take the correct medication safely and consistently.**
+
+1. The product reminds users when medication should be taken. **Priority: 5**
+2. The product helps users determine whether a scheduled dose has already been taken. **Priority: 5**
+3. The product helps prevent missed medication doses. **Priority: 5**
+4. The product helps prevent accidental repeated doses. **Priority: 5**
+5. The product helps prevent medication from being taken at the wrong time. **Priority: 5**
+6. The product helps prevent the wrong medication from being taken. **Priority: 5**
+7. The product reduces the risk of accidental overmedication. **Priority: 5**
+8. The product helps users follow their medication schedule consistently. **Priority: 5**
+9. The product identifies when a scheduled dose has been missed. **Priority: 5**
+10. The product identifies when a scheduled medication event has been completed. **Priority: 5**
+11. The product maintains an accurate history of medication events. **Priority: 5**
+12. The product reduces uncertainty about when medication was last accessed. **Priority: 4**
+13. The product allows users to manage medication with greater independence. **Priority: 4**
+14. The product reduces medication mix-ups. **Priority: 5**
+15. The product prevents unintended access to additional medication when appropriate. **Priority: 5**
+
+### Reminders and Status Feedback
+
+**Meta Need: The product clearly communicates when medication should be taken and its current status.**
+
+16. The product provides clear medication reminders. **Priority: 5**
+17. The product provides reminders that are noticeable to the intended user. **Priority: 5**
+18. The product provides a visual method of communicating medication status. **Priority: 4**
+19. The product allows reminders to be customized to the user. **Priority: 4**
+20. The product allows users or caregivers to change or disable unwanted alerts. **Priority: 4**
+21. The product avoids unnecessary alerts that disturb users during sleep. **Priority: 3**
+22. The product allows medication status to be understood at a glance. **Priority: 4**
+23. The product clearly distinguishes upcoming, completed, and missed medication events. **Priority: 5**
+24. The product confirms when a medication event has been completed. **Priority: 4**
+25. The product communicates the correct medication day and time. **Priority: 5**
+
+### Ease of Use and Setup
+
+**Meta Need: The product is simple to understand, configure, and operate.**
+
+26. The product is easy to set up. **Priority: 5**
+27. The product provides clear and complete setup instructions. **Priority: 4**
+28. The product uses controls that are easy to understand. **Priority: 5**
+29. The product requires minimal technical knowledge to configure. **Priority: 4**
+30. The product allows setup mistakes to be corrected easily. **Priority: 4**
+31. The product makes common settings easy to change. **Priority: 4**
+32. The product allows normal operation without repeatedly consulting instructions. **Priority: 4**
+33. The product can be operated without constant caregiver assistance. **Priority: 4**
+34. The product provides a simple and understandable user interface. **Priority: 4**
+35. The product makes important medication information easy to locate. **Priority: 4**
+36. The product clearly communicates its operating requirements before use. **Priority: 3**
+37. The product can be prepared for normal use without an unnecessarily long setup process. **Priority: 3**
+
+### Accessibility
+
+**Meta Need: The product can be used comfortably by people with different physical and cognitive abilities.**
+
+38. The product supports users with memory difficulties. **Priority: 5**
+39. The product is usable by people with limited finger movement or dexterity. **Priority: 5**
+40. The product provides alerts that can be recognized by users with reduced hearing. **Priority: 4**
+41. The product uses clear and understandable labels. **Priority: 4**
+42. The product displays information that is easy to read. **Priority: 4**
+43. The product allows medication to be removed easily. **Priority: 5**
+44. The product is easy to open and close. **Priority: 4**
+45. The product can be operated by users with limited hand strength. **Priority: 4**
+46. The product avoids small or awkward controls that make operation difficult. **Priority: 4**
+47. The product supports older or cognitively impaired users who want to remain independent. **Priority: 5**
+
+### Reliability and Accuracy
+
+**Meta Need: The product performs its medication-management functions consistently and accurately.**
+
+48. The product operates reliably during normal use. **Priority: 5**
+49. The product accurately records medication events. **Priority: 5**
+50. The product maintains accurate time. **Priority: 5**
+51. The product performs scheduled functions at the correct time. **Priority: 5**
+52. The product prevents medication from becoming jammed during normal operation. **Priority: 4**
+53. The product operates correctly with medications of different sizes. **Priority: 4**
+54. The product remains reliable over long periods of daily use. **Priority: 5**
+55. The product uses dependable electrical connections. **Priority: 4**
+56. The product avoids intermittent failures during normal operation. **Priority: 5**
+57. The product provides consistent quality between individual units. **Priority: 4**
+58. The product clearly indicates when a malfunction occurs. **Priority: 5**
+59. The product retains important settings following a loss of power. **Priority: 4**
+
+### Caregiver Support and Monitoring
+
+**Meta Need: The product helps caregivers monitor medication use without creating unnecessary work.**
+
+60. The product alerts caregivers when a medication dose is missed. **Priority: 5**
+61. The product allows caregivers to check medication status remotely when appropriate. **Priority: 4**
+62. The product provides medication information that caregivers can trust. **Priority: 5**
+63. The product reduces the amount of repetitive medication reminding required from caregivers. **Priority: 4**
+64. The product allows caregivers to assist with problems without always being physically present. **Priority: 4**
+65. The product records important interactions with the medication system. **Priority: 4**
+66. The product presents caregiver information in a clear and understandable format. **Priority: 4**
+67. The product provides useful notifications without creating unnecessary notification overload. **Priority: 3**
+68. The product provides reliable caregiver-monitoring functions. **Priority: 4**
+69. The product supports caregiver involvement without unnecessarily reducing user independence. **Priority: 4**
+
+### Scheduling and Flexibility
+
+**Meta Need: The product adapts to different medication schedules and changing user needs.**
+
+70. The product supports multiple medication times per day. **Priority: 5**
+71. The product accommodates complex medication schedules. **Priority: 4**
+72. The product adapts when a user's medication routine changes. **Priority: 4**
+73. The product accommodates medications with different refill cycles. **Priority: 3**
+74. The product allows scheduled medication times to be adjusted easily. **Priority: 4**
+75. The product accommodates reasonable early or late medication windows when needed. **Priority: 3**
+76. The product allows intentionally skipped doses to be recorded correctly. **Priority: 4**
+77. The product accommodates temporary changes or short-term medications. **Priority: 3**
+78. The product stores enough medication to reduce unnecessary refilling. **Priority: 3**
+79. The product allows reminder times to be adjusted to different user routines. **Priority: 4**
+
+### Power and Connectivity
+
+**Meta Need: The product continues performing essential functions despite power or communication problems.**
+
+80. The product continues essential operation during a temporary loss of external power. **Priority: 5**
+81. The product provides dependable backup power. **Priority: 4**
+82. The product accurately communicates its remaining power status. **Priority: 4**
+83. The product does not create unnecessary inconvenience through its power requirements. **Priority: 3**
+84. The product maintains reliable communication when connected to another device or network. **Priority: 4**
+85. The product continues its core medication functions if network communication is lost. **Priority: 5**
+86. The product recovers communication reliably after a temporary connection failure. **Priority: 3**
+87. The product clearly communicates compatibility requirements before setup. **Priority: 3**
+
+### Physical Design, Security, and Refilling
+
+**Meta Need: The product stores and provides medication safely while remaining easy to handle and refill.**
+
+88. The product protects stored medication from unintended access. **Priority: 5**
+89. The product clearly communicates which areas or functions are secured. **Priority: 3**
+90. The product uses covers, locks, and moving parts that withstand repeated use. **Priority: 4**
+91. The product is easy to refill. **Priority: 4**
+92. The product keeps different medication doses properly separated. **Priority: 5**
+93. The product prevents pills from accidentally spilling or becoming lost. **Priority: 4**
+94. The product keeps dosage labels and organizational indicators securely in place. **Priority: 3**
+95. The product operates without creating unsafe temperatures, electrical hazards, or fire hazards. **Priority: 5**
+
+### Maintenance, Cost, and Support
+
+**Meta Need: The product is practical to own, maintain, and support over its useful life.**
+
+96. The product allows routine battery replacement or power maintenance to be performed easily. **Priority: 3**
+97. The product can be maintained without complicated disassembly. **Priority: 3**
+98. The product provides reasonable value for its intended users. **Priority: 3**
+99. The product provides users access to useful troubleshooting or customer support. **Priority: 2**
+100. Parts that require routine replacement are reasonably easy to obtain and replace. **Priority: 2**
