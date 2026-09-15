@@ -180,6 +180,10 @@ This product gave us **27 user needs: 16 explicit and 11 latent**. Explicit need
 
 ### Search #2
 
+**Keywords:** "smart automatic pill dispenser caregiver app remote monitoring"
+
+**Search Results Link:**  
+https://www.amazon.com/s?k=smart+automatic+pill+dispenser+caregiver+app+remote+monitoring
 (you don't have to perform multiple searches, but sometimes different keywords reveal slightly different results)
 
 **Keywords:** <list an alternative search you did, if applicable>
