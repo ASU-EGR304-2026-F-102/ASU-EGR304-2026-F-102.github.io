@@ -337,7 +337,7 @@ This product gave us **24 user needs**. Explicit needs come directly from custom
 23. The controls are easy to understand for users with memory or cognitive difficulties. **(Explicit)**
 24. The device minimizes confusion during normal medication use. **(Latent)**
 
-#### X. [TimerCap Medication Timer Cap and Pill Bottles](https://www.amazon.com/TimerCap-Automatically-Displays-Opened-Built/dp/B0BN4P2NF4/)
+#### 1. [TimerCap Medication Timer Cap and Pill Bottles](https://www.amazon.com/TimerCap-Automatically-Displays-Opened-Built/dp/B0BN4P2NF4/)
 
 ![TimerCap Medication Timer Cap](image/PillTimer.jpg)
 
