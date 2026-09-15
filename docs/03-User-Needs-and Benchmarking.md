@@ -259,6 +259,82 @@ This product gave us **22 user needs: 14 explicit and 8 latent**. Explicit needs
 22. The product allows users to verify compatibility before setup. **(Latent)**
 
 
+
+#### 2. [MedCenter 31-Day Pill Organizer System with 4-Time Talking Alarm](https://www.amazon.com/MedCenter-70265-Organizer-Reminder-System)
+
+![MedCenter 31-Day Pill Organizer](image/MedCenter.jpg)
+
+- **Vendor:** Sold by MedCenter Systems, ships from Amazon.
+- **Brand:** MedCenter.
+- **Product:** 31-Day Pill Organizer System with 4-Time Talking Alarm.
+- **Description:** A 31-day medication organizer with pill boxes labeled by date and time of day, including morning, noon, evening, and night. The system includes a talking alarm that can announce medication reminders up to four times per day, confirmation buttons to indicate that a dose was taken, and color-coded indicators showing whether medication has been taken. The device runs on two AA batteries.
+- **Connection to our project:** This product relates to our Medication Guardian because it uses scheduled reminders, dose confirmation, and visual organization to reduce medication mistakes, while its accessibility, setup, and safety problems show areas our design could improve.
+
+##### Positive Comments
+
+The following positive comments come from Amazon customer reviews.
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **Lilli, 5 stars, “Life saver”:** The reviewer said the talking organizer eliminated medication mix-ups for an elderly parent living alone and replaced a confusing weekly multi-container system with one monthly setup. | 1. The device helps prevent medication mix-ups. **(Explicit)** |
+|  | 2. The device provides clear reminders when medication should be taken. **(Explicit)** |
+|  | 3. The device helps users manage medication more independently. **(Latent)** |
+|  | 4. The device reduces the amount of medication management required from caregivers. **(Latent)** |
+|  | 5. The device stores enough medication to reduce frequent refilling. **(Latent)** |
+| **Happy Surfer, 5 stars, “In use for a year with a stubborn relative, works well”:** The reviewer described the system as a reliable and customizable medication reminder for an independent 89-year-old user. | 6. The device provides reliable medication reminders. **(Explicit)** |
+|  | 7. The device allows medication reminders to be customized. **(Explicit)** |
+|  | 8. The device supports older users who want to remain independent. **(Latent)** |
+| **Sequoiadendron giganteum, 4 stars, “Good Product with Well Designed Features - Some hard to Get To Pills Difficulties”:** The reviewer, who has cognitive impairment and arthritic hands, praised the clear color coding and layout but reported physical difficulty accessing pills. | 9. The device uses clear visual organization to distinguish medication status. **(Explicit)** |
+|  | 10. The device is easy to understand for users with cognitive limitations. **(Latent)** |
+|  | 11. The device allows users with limited hand movement to access medication easily. **(Explicit)** |
+
+##### Negative Comments
+
+| Voice of the Customer | Restated Customer Need |
+| --- | --- |
+| **Barb, 1 star, “This product is very hard to open”:** The reviewer said the compartment lids were too difficult for her mother with dementia to open and also reported poor manufacturing quality and a battery that became dangerously hot. | 12. The medication compartments are easy to open. **(Explicit)** |
+|  | 13. The device is usable by people with limited hand strength or dexterity. **(Latent)** |
+|  | 14. The device is manufactured with durable, reliable components. **(Explicit)** |
+|  | 15. The batteries and electronics remain at a safe operating temperature. **(Explicit)** |
+|  | 16. The device does not create a fire or overheating hazard during normal use. **(Latent)** |
+| **Sherry, 1 star, “Too Confusing for Meds w/ Different Refill Cycles”:** The reviewer said the system became too complicated when managing nine medications with different refill schedules. | 17. The device accommodates medications with different refill schedules. **(Explicit)** |
+|  | 18. The device remains simple to use when managing many medications. **(Latent)** |
+|  | 19. The device accommodates users with complex medication routines. **(Latent)** |
+| **Bethluv, 1 star, “Too complicated”:** The reviewer reported missing instructions, incorrect day announcements, difficulty disabling existing alarms, and confusing controls for a user with mild Alzheimer's. | 20. The device includes clear and complete setup instructions. **(Explicit)** |
+|  | 21. The device accurately announces the correct medication day and time. **(Explicit)** |
+|  | 22. The device allows users or caregivers to easily change or disable alarms. **(Explicit)** |
+|  | 23. The controls are easy to understand for users with memory or cognitive difficulties. **(Explicit)** |
+|  | 24. The device minimizes confusion during normal medication use. **(Latent)** |
+
+##### Compiled List of User Needs
+
+This product gave us **24 user needs**. Explicit needs come directly from customer feedback, while latent needs are inferred from the experiences and problems customers described.
+
+1. The device helps prevent medication mix-ups. **(Explicit)**
+2. The device provides clear reminders when medication should be taken. **(Explicit)**
+3. The device helps users manage medication more independently. **(Latent)**
+4. The device reduces the amount of medication management required from caregivers. **(Latent)**
+5. The device stores enough medication to reduce frequent refilling. **(Latent)**
+6. The device provides reliable medication reminders. **(Explicit)**
+7. The device allows medication reminders to be customized. **(Explicit)**
+8. The device supports older users who want to remain independent. **(Latent)**
+9. The device uses clear visual organization to distinguish medication status. **(Explicit)**
+10. The device is easy to understand for users with cognitive limitations. **(Latent)**
+11. The device allows users with limited hand movement to access medication easily. **(Explicit)**
+12. The medication compartments are easy to open. **(Explicit)**
+13. The device is usable by people with limited hand strength or dexterity. **(Latent)**
+14. The device is manufactured with durable, reliable components. **(Explicit)**
+15. The batteries and electronics remain at a safe operating temperature. **(Explicit)**
+16. The device does not create a fire or overheating hazard during normal use. **(Latent)**
+17. The device accommodates medications with different refill schedules. **(Explicit)**
+18. The device remains simple to use when managing many medications. **(Latent)**
+19. The device accommodates users with complex medication routines. **(Latent)**
+20. The device includes clear and complete setup instructions. **(Explicit)**
+21. The device accurately announces the correct medication day and time. **(Explicit)**
+22. The device allows users or caregivers to easily change or disable alarms. **(Explicit)**
+23. The controls are easy to understand for users with memory or cognitive difficulties. **(Explicit)**
+24. The device minimizes confusion during normal medication use. **(Latent)**
+
 #### 5. Next Product goes here
 
 
