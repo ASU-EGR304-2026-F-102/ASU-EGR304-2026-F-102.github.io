@@ -432,6 +432,8 @@ Each user need identified during benchmarking was placed on an individual sticky
 
 ### Grouped with Categories
 
+![Grouped with Categories](image/userneeds1.jpg)
+
 After the initial placement, similar needs were grouped together. Repeated needs were combined and revised into broader user-need statements. Each category was also given a **meta need** describing the overall goal of that group.
 
 | Category | Meta Need |
@@ -447,7 +449,8 @@ After the initial placement, similar needs were grouped together. Repeated needs
 | Physical Design, Security, and Refilling | **The product stores and provides medication safely while remaining easy to handle and refill.** |
 | Maintenance, Cost, and Support | **The product is practical to own, maintain, and support over its useful life.** |
 
-![User needs grouped into categories](image/userneeds2.jpg)
+![User needs grouped into categories](image/userneeds2.png)
+
 
 ### Ranked
 
@@ -461,7 +464,7 @@ The following priority scale was used:
 - **2 - Low:** Helpful improvement with less effect on core operation.
 - **1 - Nice to Have:** Adds convenience but has little effect on core performance.
 
-![Ranked user needs](image/userneeds1.jpg)
+![Ranked user needs]
 
 ## Compiled List of User Needs
 
