@@ -15,10 +15,10 @@ This charter gives the team a shared standard for decision-making and accountabi
 
 ## Product Mission Statement
 
-Team 102 considered the intended users, operating environment, primary function, and common failures associated with small irrigation systems. Based on this discussion, the team developed the following product mission statement:
+Team 102 considered the intended users, operating environment, primary function, and common failures associated with an advanced medication monitor. Based on this discussion, the team developed the following product mission statement:
 
-> Project Aurora’s mission is to automatically irrigate a small garden using collected rainwater while conserving water and protecting the pump through soil-moisture, tank-level, and water-flow monitoring.
+> Project Aurora’s mission is to support people who take daily medication by providing an reliable, easy to use, medication storage that helps organize doses, manage routine, and detects if medication is stored in the proper environment.
 
-Project Aurora will activate irrigation only when the soil requires water and the storage tank contains enough water. The system will monitor actual water flow, stop the pump when unsafe operating conditions are detected, and provide clear status or fault indications to the user.
+Project Aurora will be an advanced storage device that will include LED's for alerting user to take medication, while keeping track of interaction done by user and amount of pills taken out of storage. In addition device will include a environment sensor to ensure storage is acceptable. 
 
-The project will be divided into four modular subsystems: soil-moisture sensing, tank-level sensing, water-flow monitoring, and pump control with user warnings. These subsystems will communicate with one another to create a reliable and practical tabletop irrigation prototype.
+The project will be divided into four modular subsystems: weight sensor, to detect if pill is taken out of bottle, cap open/close sensor to detect if pill bottle is opened, an alarm system(led,buzzer,etc) to remind user to take medication, and a temperature/light sensor to detect if medication is stored in right place.
