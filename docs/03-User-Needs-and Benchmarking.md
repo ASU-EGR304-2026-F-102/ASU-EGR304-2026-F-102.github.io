@@ -337,13 +337,13 @@ This product gave us **24 user needs**. Explicit needs come directly from custom
 
 #### X. [TimerCap Medication Timer Cap and Pill Bottles](https://www.amazon.com/TimerCap-Automatically-Displays-Opened-Built/dp/B0BN4P2NF4/)
 
-![TimerCap Medication Timer Cap](image/YOUR-TIMERCAP-IMAGE-FILENAME.jpg)
+![TimerCap Medication Timer Cap](image/PillTimer.jpg)
 
 - **Vendor:** Amazon.
 - **Brand:** TimerCap.
 - **Product:** Medication Timer Cap and Pill Bottle System.
-- **Price:** [Enter current Amazon price]
-- **Rating:** [Enter current Amazon rating]
+- **Price:** $34.95
+* **Rating:** 3.8 out of 5 stars from 115 ratings.
 - **Description:** A medication bottle system with an electronic timer built into the cap. Each time the bottle is opened, the timer resets and then displays how long it has been since the bottle was last opened, helping users remember whether they may have already taken their medication.
 - **Connection to our project:** This product relates to our Medication Guardian because it tracks when medication was last accessed without requiring alarms or complicated controls, while its battery, durability, and reliability problems show areas our design could improve.
 
