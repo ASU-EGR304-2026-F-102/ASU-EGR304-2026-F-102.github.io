@@ -87,7 +87,7 @@ This product gave us **20 user needs: 14 explicit and 6 latent**. Explicit needs
 
 
 
-#### 3. [28-Day (1X) Automatic Pill Dispenser (Expandable Tray)](https://www.amazon.com/Ideerfit-28-Day-Automatic-Dispenser-Device/dp/B0FD9XCZBH/ref=sr_1_5?crid=undefined&th=1)
+#### 4. [28-Day (1X) Automatic Pill Dispenser (Expandable Tray)](https://www.amazon.com/Ideerfit-28-Day-Automatic-Dispenser-Device/dp/B0FD9XCZBH/ref=sr_1_5?crid=undefined&th=1)
 
 ![Ideerfit Automatic Pill Dispenser](image/28automatic-pill-dispenser.jpg.jpg)
 
@@ -186,13 +186,8 @@ This product gave us **27 user needs: 16 explicit and 11 latent**. Explicit need
 https://www.amazon.com/s?k=smart+automatic+pill+dispenser+caregiver+app+remote+monitoring
 (you don't have to perform multiple searches, but sometimes different keywords reveal slightly different results)
 
-**Keywords:** <list an alternative search you did, if applicable>
 
-**Search Results Link:** <add your link here>
-
-### Selected Products
-
-#### X. [LiveFine Auto WiFi Pill Dispenser for Elderly](https://www.amazon.com/gp/aw/d/B09DMFR85D/?_encoding=UTF8&pd_rd_plhd=undefined&th=1)
+#### 3. [LiveFine Auto WiFi Pill Dispenser for Elderly](https://www.amazon.com/gp/aw/d/B09DMFR85D/?_encoding=UTF8&pd_rd_plhd=undefined&th=1)
 
 ![LiveFine Auto WiFi Pill Dispenser](image/LiveFine.jpg)
 
@@ -263,7 +258,6 @@ This product gave us **22 user needs: 14 explicit and 8 latent**. Explicit needs
 21. The product ships with functioning batteries and an accurate battery display. **(Explicit)**
 22. The product allows users to verify compatibility before setup. **(Latent)**
 
-#### 4. Next Product goes here
 
 #### 5. Next Product goes here
 
