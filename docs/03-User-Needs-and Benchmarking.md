@@ -81,6 +81,11 @@ This product gave us **20 user needs: 14 explicit and 6 latent**. Explicit needs
 19. The dosage labels stay in place during use. **(Explicit)**
 20. The device helps keep pills clean when users remove them. **(Latent)**
 
+### Search #1
+
+**Keywords:** "Automatic pill dispenser"
+
+
 
 #### 4. [28-Day (1X) Automatic Pill Dispenser (Expandable Tray)](https://www.amazon.com/Ideerfit-28-Day-Automatic-Dispenser-Device/dp/B0FD9XCZBH/ref=sr_1_5?crid=undefined&th=1)
 
