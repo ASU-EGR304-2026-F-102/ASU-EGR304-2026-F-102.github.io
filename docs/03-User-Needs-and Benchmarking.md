@@ -428,7 +428,7 @@ This product gave us **24 user needs**. Explicit needs come directly from custom
 
 Each user need identified during benchmarking was placed on an individual sticky note. At this stage, the needs were not grouped or ranked. Duplicate and similar needs from different products were kept so that common customer concerns could be identified.
 
-![Initial placement of user needs](image/user-needs-first-placement.jpg)
+
 
 ### Grouped with Categories
 
