@@ -878,11 +878,11 @@
 <p>These requirements focus on the safety problems that can realistically be addressed and tested with the Project Aurora prototype.</p>
 <hr>
 <h1 id="requirement-criteria-specifications">Requirement Criteria Specifications</h1>
-<p>The design aspects above describe the main goals of Project Aurora. The following criteria turn those goals into requirements that can be checked using inspection, testing, or demonstration.</p>
-<p>Each requirement is given a priority:</p>
+<p>The design aspects above describe what we want Project Aurora to do. The requirements below turn those ideas into specific goals that we can test, inspect, or demonstrate with the prototype.</p>
+<p>Each requirement is also given a priority:</p>
 <ul>
-<li><strong>Must:</strong> Required for the prototype to meet its main purpose.</li>
-<li><strong>Should:</strong> Important to the design, but the prototype can still meet its main purpose if the requirement cannot be fully completed.</li>
+<li><strong>Must:</strong> An important requirement that the prototype needs to meet.</li>
+<li><strong>Should:</strong> A useful requirement that we want to meet if it is realistic within the project time and resources.</li>
 </ul>
 <h2 id="product-design-requirements">Product Design Requirements</h2>
 <table>
@@ -890,7 +890,7 @@
 <tr>
 <th>ID</th>
 <th>Priority</th>
-<th>Requirement Criteria Specification</th>
+<th>Requirement Criteria</th>
 <th>Verification</th>
 </tr>
 </thead>
@@ -898,25 +898,25 @@
 <tr>
 <td>PD1</td>
 <td>Must</td>
-<td>The device shall keep different scheduled medication doses physically separated and prevent normal access to medication that is not currently available.</td>
+<td>The device needs to keep different medication doses separated and keep future doses unavailable until the correct time.</td>
 <td>Inspection / Demonstration</td>
 </tr>
 <tr>
 <td>PD2</td>
 <td>Must</td>
-<td>After dispensing, the complete intended dose shall be accessible without the user reaching into the internal dispensing mechanism.</td>
+<td>After medication is dispensed, the user needs to be able to collect the full dose without reaching into the moving parts of the device.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>PD3</td>
 <td>Should</td>
-<td>The medication tray shall be removable, refillable, and reinstallable by hand without requiring special tools.</td>
+<td>The medication tray should be easy to remove, refill, and put back without needing special tools.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>PD4</td>
 <td>Should</td>
-<td>The dispensing mechanism shall complete <strong>20 consecutive dispensing cycles without a pill or test object becoming stuck</strong>.</td>
+<td>The dispensing system should complete <strong>20 dispensing cycles in a row without a pill or test object getting stuck</strong>.</td>
 <td>Test</td>
 </tr>
 </tbody>
@@ -927,7 +927,7 @@
 <tr>
 <th>ID</th>
 <th>Priority</th>
-<th>Requirement Criteria Specification</th>
+<th>Requirement Criteria</th>
 <th>Verification</th>
 </tr>
 </thead>
@@ -935,49 +935,49 @@
 <tr>
 <td>SW1</td>
 <td>Must</td>
-<td>The device shall maintain the correct date and time and activate a scheduled medication event within <strong>±1 minute</strong> of the programmed time.</td>
+<td>The device needs to keep the correct date and time and start a medication event within <strong>±1 minute</strong> of the programmed time.</td>
 <td>Test</td>
 </tr>
 <tr>
 <td>SW2</td>
 <td>Must</td>
-<td>The system shall support at least <strong>4 independently programmed medication times per day</strong>.</td>
+<td>The system needs to support at least <strong>4 different medication times in one day</strong>.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>SW3</td>
 <td>Must</td>
-<td>The system shall prevent the same scheduled dose from being dispensed more than once during normal operation.</td>
+<td>The system needs to prevent the same scheduled dose from being dispensed twice during normal use.</td>
 <td>Test</td>
 </tr>
 <tr>
 <td>SW4</td>
 <td>Must</td>
-<td>Programmed medication times shall remain stored after the device is powered off and restarted.</td>
+<td>Programmed medication times need to stay saved after the device is turned off and turned back on.</td>
 <td>Test</td>
 </tr>
 <tr>
 <td>SW5</td>
 <td>Must</td>
-<td>The weight sensor shall detect when medication is removed and allow the system to record the medication interaction.</td>
+<td>The weight sensor needs to detect when medication is removed so the system can record the interaction.</td>
 <td>Test / Demonstration</td>
 </tr>
 <tr>
 <td>SW6</td>
 <td>Must</td>
-<td>The cap sensor shall detect when the medication container is opened or closed.</td>
+<td>The cap sensor needs to detect when the medication container is opened or closed.</td>
 <td>Test / Demonstration</td>
 </tr>
 <tr>
 <td>SW7</td>
 <td>Should</td>
-<td>The device shall read temperature and light conditions and provide an indication when the measured storage condition is outside the programmed acceptable range.</td>
+<td>The device should measure temperature and light conditions and warn the user when the storage conditions are outside the selected safe range.</td>
 <td>Test / Demonstration</td>
 </tr>
 <tr>
 <td>SW8</td>
 <td>Should</td>
-<td>Basic scheduled reminders and local medication functions shall continue to operate without an internet connection.</td>
+<td>Basic reminders and medication functions should continue working even if there is no internet connection.</td>
 <td>Test</td>
 </tr>
 </tbody>
@@ -988,7 +988,7 @@
 <tr>
 <th>ID</th>
 <th>Priority</th>
-<th>Requirement Criteria Specification</th>
+<th>Requirement Criteria</th>
 <th>Verification</th>
 </tr>
 </thead>
@@ -996,25 +996,25 @@
 <tr>
 <td>UX1</td>
 <td>Must</td>
-<td>The main interface shall clearly display the current time and whether medication is currently ready.</td>
+<td>The main interface needs to clearly show the current time and whether medication is ready.</td>
 <td>Inspection / Demonstration</td>
 </tr>
 <tr>
 <td>UX2</td>
 <td>Must</td>
-<td>The device shall provide both an audible and visual reminder when a scheduled medication becomes available.</td>
+<td>The device needs to use both sound and light when reminding the user that medication is ready.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>UX3</td>
 <td>Should</td>
-<td>A normal scheduled dose shall require no more than <strong>2 user actions</strong> to begin dispensing after the reminder starts.</td>
+<td>The user should be able to start a normal medication dispense with no more than <strong>2 actions</strong> after the reminder begins.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>UX4</td>
 <td>Must</td>
-<td>When a detectable error occurs, the interface shall clearly indicate that an error has occurred.</td>
+<td>If the device detects a problem, the interface needs to clearly show that an error occurred.</td>
 <td>Test / Demonstration</td>
 </tr>
 </tbody>
@@ -1025,7 +1025,7 @@
 <tr>
 <th>ID</th>
 <th>Priority</th>
-<th>Requirement Criteria Specification</th>
+<th>Requirement Criteria</th>
 <th>Verification</th>
 </tr>
 </thead>
@@ -1033,19 +1033,19 @@
 <tr>
 <td>C1</td>
 <td>Must</td>
-<td>The user shall be able to change an individual medication time without resetting the other programmed medication times.</td>
+<td>The user needs to be able to change one medication time without resetting the other medication times.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>C2</td>
 <td>Must</td>
-<td>The system shall allow multiple medication times to be programmed within the same day.</td>
+<td>The user needs to be able to program multiple medication times during the same day.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>C3</td>
 <td>Should</td>
-<td>The user shall be able to adjust the reminder volume and turn optional reminder sounds on or off.</td>
+<td>The user should be able to change the reminder volume and turn optional reminder sounds on or off.</td>
 <td>Demonstration</td>
 </tr>
 </tbody>
@@ -1056,7 +1056,7 @@
 <tr>
 <th>ID</th>
 <th>Priority</th>
-<th>Requirement Criteria Specification</th>
+<th>Requirement Criteria</th>
 <th>Verification</th>
 </tr>
 </thead>
@@ -1064,25 +1064,25 @@
 <tr>
 <td>M1</td>
 <td>Must</td>
-<td>Electrical connections shall remain securely connected during normal operation, refilling, and opening or closing of the device.</td>
+<td>Electrical connections need to stay connected during normal use, refilling, and opening or closing the device.</td>
 <td>Inspection / Test</td>
 </tr>
 <tr>
 <td>M2</td>
 <td>Should</td>
-<td>The medication tray shall either fit only in the correct orientation or clearly show the correct installation orientation.</td>
+<td>The medication tray should either fit only in the correct direction or have clear markings that show how it should be installed.</td>
 <td>Inspection / Demonstration</td>
 </tr>
 <tr>
 <td>M3</td>
 <td>Should</td>
-<td>Medication-contact areas and parts requiring normal maintenance shall be accessible without completely disassembling the device.</td>
+<td>Medication-contact areas and parts that may need maintenance should be accessible without taking the whole device apart.</td>
 <td>Inspection / Demonstration</td>
 </tr>
 <tr>
 <td>M4</td>
 <td>Must</td>
-<td>The completed prototype shall pass a functional check of the controls, sensors, reminder system, dispensing mechanism, and power system before the final demonstration.</td>
+<td>Before the final demonstration, the completed prototype needs to pass a basic check of the controls, sensors, reminders, dispensing system, and power system.</td>
 <td>Test</td>
 </tr>
 </tbody>
@@ -1093,7 +1093,7 @@
 <tr>
 <th>ID</th>
 <th>Priority</th>
-<th>Requirement Criteria Specification</th>
+<th>Requirement Criteria</th>
 <th>Verification</th>
 </tr>
 </thead>
@@ -1101,39 +1101,39 @@
 <tr>
 <td>SF1</td>
 <td>Must</td>
-<td>The device shall prevent normal access to medication that is not currently available.</td>
+<td>The device needs to prevent normal access to medication that is not currently available.</td>
 <td>Demonstration</td>
 </tr>
 <tr>
 <td>SF2</td>
 <td>Must</td>
-<td>The system shall prevent accidental repeated dispensing of the same scheduled dose.</td>
+<td>The system needs to prevent the same scheduled dose from being accidentally dispensed twice.</td>
 <td>Test</td>
 </tr>
 <tr>
 <td>SF3</td>
 <td>Must</td>
-<td>The device shall not begin a dispensing cycle when the required medication tray or dispensing component is missing.</td>
+<td>The device needs to prevent dispensing when an important part, such as the medication tray, is missing.</td>
 <td>Test</td>
 </tr>
 <tr>
 <td>SF4</td>
 <td>Must</td>
-<td>If a dispensing error is detected, the dispensing process shall stop and the user shall receive an error indication.</td>
+<td>If a dispensing error is detected, the device needs to stop the dispensing process and warn the user.</td>
 <td>Test / Demonstration</td>
 </tr>
 <tr>
 <td>SF5</td>
 <td>Must</td>
-<td>Normal user operation shall not expose the user to powered electrical connections or reachable moving parts that could pinch the user's fingers.</td>
+<td>During normal use, the user should not be able to touch powered electrical connections or moving parts that could pinch their fingers.</td>
 <td>Inspection</td>
 </tr>
 </tbody>
 </table>
-<h3 id="verification-methods">Verification Methods</h3>
-<p><strong>Inspection:</strong> The requirement can be verified by looking at the completed prototype or its design.</p>
-<p><strong>Test:</strong> The prototype is operated under a controlled condition and the result is measured or recorded.</p>
-<p><strong>Demonstration:</strong> The required function is shown through normal operation of the prototype.</p>
+<h2 id="verification-methods">Verification Methods</h2>
+<p><strong>Inspection:</strong> We can check the requirement by looking at the finished prototype or its design.</p>
+<p><strong>Test:</strong> We operate the prototype under a specific condition and check the result.</p>
+<p><strong>Demonstration:</strong> We show that the required function works during normal use of the prototype.</p>
 <hr>
 <h1 id="open-questions">Open Questions</h1>
 <ul>
