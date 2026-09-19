@@ -156,78 +156,78 @@ These requirements focus on the safety problems that can realistically be addres
 
 # Requirement Criteria Specifications
 
-The design aspects above describe the main goals of Project Aurora. The following criteria turn those goals into requirements that can be checked using inspection, testing, or demonstration.
+The design aspects above describe what we want Project Aurora to do. The requirements below turn those ideas into specific goals that we can test, inspect, or demonstrate with the prototype.
 
-Each requirement is given a priority:
+Each requirement is also given a priority:
 
-- **Must:** Required for the prototype to meet its main purpose.
-- **Should:** Important to the design, but the prototype can still meet its main purpose if the requirement cannot be fully completed.
+- **Must:** An important requirement that the prototype needs to meet.
+- **Should:** A useful requirement that we want to meet if it is realistic within the project time and resources.
 
 ## Product Design Requirements
 
-| ID | Priority | Requirement Criteria Specification | Verification |
+| ID | Priority | Requirement Criteria | Verification |
 | --- | --- | --- | --- |
-| PD1 | Must | The device shall keep different scheduled medication doses physically separated and prevent normal access to medication that is not currently available. | Inspection / Demonstration |
-| PD2 | Must | After dispensing, the complete intended dose shall be accessible without the user reaching into the internal dispensing mechanism. | Demonstration |
-| PD3 | Should | The medication tray shall be removable, refillable, and reinstallable by hand without requiring special tools. | Demonstration |
-| PD4 | Should | The dispensing mechanism shall complete **20 consecutive dispensing cycles without a pill or test object becoming stuck**. | Test |
+| PD1 | Must | The device needs to keep different medication doses separated and keep future doses unavailable until the correct time. | Inspection / Demonstration |
+| PD2 | Must | After medication is dispensed, the user needs to be able to collect the full dose without reaching into the moving parts of the device. | Demonstration |
+| PD3 | Should | The medication tray should be easy to remove, refill, and put back without needing special tools. | Demonstration |
+| PD4 | Should | The dispensing system should complete **20 dispensing cycles in a row without a pill or test object getting stuck**. | Test |
 
 ## Software / Functionality Requirements
 
-| ID | Priority | Requirement Criteria Specification | Verification |
+| ID | Priority | Requirement Criteria | Verification |
 | --- | --- | --- | --- |
-| SW1 | Must | The device shall maintain the correct date and time and activate a scheduled medication event within **±1 minute** of the programmed time. | Test |
-| SW2 | Must | The system shall support at least **4 independently programmed medication times per day**. | Demonstration |
-| SW3 | Must | The system shall prevent the same scheduled dose from being dispensed more than once during normal operation. | Test |
-| SW4 | Must | Programmed medication times shall remain stored after the device is powered off and restarted. | Test |
-| SW5 | Must | The weight sensor shall detect when medication is removed and allow the system to record the medication interaction. | Test / Demonstration |
-| SW6 | Must | The cap sensor shall detect when the medication container is opened or closed. | Test / Demonstration |
-| SW7 | Should | The device shall read temperature and light conditions and provide an indication when the measured storage condition is outside the programmed acceptable range. | Test / Demonstration |
-| SW8 | Should | Basic scheduled reminders and local medication functions shall continue to operate without an internet connection. | Test |
+| SW1 | Must | The device needs to keep the correct date and time and start a medication event within **±1 minute** of the programmed time. | Test |
+| SW2 | Must | The system needs to support at least **4 different medication times in one day**. | Demonstration |
+| SW3 | Must | The system needs to prevent the same scheduled dose from being dispensed twice during normal use. | Test |
+| SW4 | Must | Programmed medication times need to stay saved after the device is turned off and turned back on. | Test |
+| SW5 | Must | The weight sensor needs to detect when medication is removed so the system can record the interaction. | Test / Demonstration |
+| SW6 | Must | The cap sensor needs to detect when the medication container is opened or closed. | Test / Demonstration |
+| SW7 | Should | The device should measure temperature and light conditions and warn the user when the storage conditions are outside the selected safe range. | Test / Demonstration |
+| SW8 | Should | Basic reminders and medication functions should continue working even if there is no internet connection. | Test |
 
 ## Interactivity & User Experience Requirements
 
-| ID | Priority | Requirement Criteria Specification | Verification |
+| ID | Priority | Requirement Criteria | Verification |
 | --- | --- | --- | --- |
-| UX1 | Must | The main interface shall clearly display the current time and whether medication is currently ready. | Inspection / Demonstration |
-| UX2 | Must | The device shall provide both an audible and visual reminder when a scheduled medication becomes available. | Demonstration |
-| UX3 | Should | A normal scheduled dose shall require no more than **2 user actions** to begin dispensing after the reminder starts. | Demonstration |
-| UX4 | Must | When a detectable error occurs, the interface shall clearly indicate that an error has occurred. | Test / Demonstration |
+| UX1 | Must | The main interface needs to clearly show the current time and whether medication is ready. | Inspection / Demonstration |
+| UX2 | Must | The device needs to use both sound and light when reminding the user that medication is ready. | Demonstration |
+| UX3 | Should | The user should be able to start a normal medication dispense with no more than **2 actions** after the reminder begins. | Demonstration |
+| UX4 | Must | If the device detects a problem, the interface needs to clearly show that an error occurred. | Test / Demonstration |
 
 ## Customization Requirements
 
-| ID | Priority | Requirement Criteria Specification | Verification |
+| ID | Priority | Requirement Criteria | Verification |
 | --- | --- | --- | --- |
-| C1 | Must | The user shall be able to change an individual medication time without resetting the other programmed medication times. | Demonstration |
-| C2 | Must | The system shall allow multiple medication times to be programmed within the same day. | Demonstration |
-| C3 | Should | The user shall be able to adjust the reminder volume and turn optional reminder sounds on or off. | Demonstration |
+| C1 | Must | The user needs to be able to change one medication time without resetting the other medication times. | Demonstration |
+| C2 | Must | The user needs to be able to program multiple medication times during the same day. | Demonstration |
+| C3 | Should | The user should be able to change the reminder volume and turn optional reminder sounds on or off. | Demonstration |
 
 ## Manufacturing Requirements
 
-| ID | Priority | Requirement Criteria Specification | Verification |
+| ID | Priority | Requirement Criteria | Verification |
 | --- | --- | --- | --- |
-| M1 | Must | Electrical connections shall remain securely connected during normal operation, refilling, and opening or closing of the device. | Inspection / Test |
-| M2 | Should | The medication tray shall either fit only in the correct orientation or clearly show the correct installation orientation. | Inspection / Demonstration |
-| M3 | Should | Medication-contact areas and parts requiring normal maintenance shall be accessible without completely disassembling the device. | Inspection / Demonstration |
-| M4 | Must | The completed prototype shall pass a functional check of the controls, sensors, reminder system, dispensing mechanism, and power system before the final demonstration. | Test |
+| M1 | Must | Electrical connections need to stay connected during normal use, refilling, and opening or closing the device. | Inspection / Test |
+| M2 | Should | The medication tray should either fit only in the correct direction or have clear markings that show how it should be installed. | Inspection / Demonstration |
+| M3 | Should | Medication-contact areas and parts that may need maintenance should be accessible without taking the whole device apart. | Inspection / Demonstration |
+| M4 | Must | Before the final demonstration, the completed prototype needs to pass a basic check of the controls, sensors, reminders, dispensing system, and power system. | Test |
 
 ## Safety Requirements
 
-| ID | Priority | Requirement Criteria Specification | Verification |
+| ID | Priority | Requirement Criteria | Verification |
 | --- | --- | --- | --- |
-| SF1 | Must | The device shall prevent normal access to medication that is not currently available. | Demonstration |
-| SF2 | Must | The system shall prevent accidental repeated dispensing of the same scheduled dose. | Test |
-| SF3 | Must | The device shall not begin a dispensing cycle when the required medication tray or dispensing component is missing. | Test |
-| SF4 | Must | If a dispensing error is detected, the dispensing process shall stop and the user shall receive an error indication. | Test / Demonstration |
-| SF5 | Must | Normal user operation shall not expose the user to powered electrical connections or reachable moving parts that could pinch the user's fingers. | Inspection |
+| SF1 | Must | The device needs to prevent normal access to medication that is not currently available. | Demonstration |
+| SF2 | Must | The system needs to prevent the same scheduled dose from being accidentally dispensed twice. | Test |
+| SF3 | Must | The device needs to prevent dispensing when an important part, such as the medication tray, is missing. | Test |
+| SF4 | Must | If a dispensing error is detected, the device needs to stop the dispensing process and warn the user. | Test / Demonstration |
+| SF5 | Must | During normal use, the user should not be able to touch powered electrical connections or moving parts that could pinch their fingers. | Inspection |
 
-### Verification Methods
+## Verification Methods
 
-**Inspection:** The requirement can be verified by looking at the completed prototype or its design.
+**Inspection:** We can check the requirement by looking at the finished prototype or its design.
 
-**Test:** The prototype is operated under a controlled condition and the result is measured or recorded.
+**Test:** We operate the prototype under a specific condition and check the result.
 
-**Demonstration:** The required function is shown through normal operation of the prototype.
+**Demonstration:** We show that the required function works during normal use of the prototype.
 
 ---
 
