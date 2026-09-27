@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2550" width="1600" height="2550"><rect width="100%" height="100%" fill="#f4f7fb"/><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#16283e}.title{font-size:32px;font-weight:bold}.sub{font-size:18px}.head{font-size:21px;font-weight:bold}.body{font-size:17px}</style>
+<text x="36" y="51" class="title">Stage 1 | Original 100 numbered ideas</text>
+<text x="36" y="85" class="sub">Exported from the supplied Word draft. Original IDs and duplicate alternatives are preserved.</text>
+<rect x="30" y="115" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="140" class="head">#1</text>
+<text x="42" y="166" class="body">Indexed rotary medication</text>
+<text x="42" y="188" class="body">carousel</text>
+<rect x="343" y="115" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="140" class="head">#2</text>
+<text x="355" y="166" class="body">Sliding compartment tray</text>
+<rect x="656" y="115" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="140" class="head">#3</text>
+<text x="668" y="166" class="body">Rotating access shutter</text>
+<rect x="969" y="115" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="140" class="head">#4</text>
+<text x="981" y="166" class="body">Single-access dispensing</text>
+<text x="981" y="188" class="body">door</text>
+<rect x="1282" y="115" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="140" class="head">#5</text>
+<text x="1294" y="166" class="body">One-way dispensing gate</text>
+<rect x="30" y="235" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="260" class="head">#6</text>
+<text x="42" y="286" class="body">Removable dispensing cup</text>
+<rect x="343" y="235" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="260" class="head">#7</text>
+<text x="355" y="286" class="body">Sloped funnel / chute</text>
+<rect x="656" y="235" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="260" class="head">#8</text>
+<text x="668" y="286" class="body">Angled dispensing surface</text>
+<rect x="969" y="235" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="260" class="head">#9</text>
+<text x="981" y="286" class="body">Wide retrieval drawer</text>
+<rect x="1282" y="235" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="260" class="head">#10</text>
+<text x="1294" y="286" class="body">Recessed cup docking area</text>
+<rect x="30" y="355" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="380" class="head">#11</text>
+<text x="42" y="406" class="body">Removable medication</text>
+<text x="42" y="428" class="body">cartridge / tray</text>
+<rect x="343" y="355" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="380" class="head">#12</text>
+<text x="355" y="406" class="body">Keyed tray orientation</text>
+<rect x="656" y="355" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="380" class="head">#13</text>
+<text x="668" y="406" class="body">Numbered medication</text>
+<text x="668" y="428" class="body">compartments</text>
+<rect x="969" y="355" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="380" class="head">#14</text>
+<text x="981" y="406" class="body">Full-opening hinged lid</text>
+<rect x="1282" y="355" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="380" class="head">#15</text>
+<text x="1294" y="406" class="body">Removable filling guide</text>
+<rect x="30" y="475" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="500" class="head">#16</text>
+<text x="42" y="526" class="body">Rounded compartment corners</text>
+<rect x="343" y="475" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="500" class="head">#17</text>
+<text x="355" y="526" class="body">Wide dispensing throat</text>
+<rect x="656" y="475" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="500" class="head">#18</text>
+<text x="668" y="526" class="body">Short agitation pulse</text>
+<rect x="969" y="475" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="500" class="head">#19</text>
+<text x="981" y="526" class="body">Automatic reverse-and-retry</text>
+<rect x="1282" y="475" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="500" class="head">#20</text>
+<text x="1294" y="526" class="body">Motor-current stall</text>
+<text x="1294" y="548" class="body">detection</text>
+<rect x="30" y="595" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="620" class="head">#21</text>
+<text x="42" y="646" class="body">Locking top lid</text>
+<rect x="343" y="595" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="620" class="head">#22</text>
+<text x="355" y="646" class="body">Mechanical caregiver</text>
+<text x="355" y="668" class="body">override</text>
+<rect x="656" y="595" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="620" class="head">#23</text>
+<text x="668" y="646" class="body">Lid tamper sensor</text>
+<rect x="969" y="595" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="620" class="head">#24</text>
+<text x="981" y="646" class="body">Tamper-evident refill seal</text>
+<rect x="1282" y="595" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="620" class="head">#25</text>
+<text x="1294" y="646" class="body">Lid-open motor interlock</text>
+<rect x="30" y="715" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="740" class="head">#26</text>
+<text x="42" y="766" class="body">Bare RTC IC with crystal</text>
+<rect x="343" y="715" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="740" class="head">#27</text>
+<text x="355" y="766" class="body">PIC software clock</text>
+<rect x="656" y="715" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="740" class="head">#28</text>
+<text x="668" y="766" class="body">Clock validity check</text>
+<rect x="969" y="715" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="740" class="head">#29</text>
+<text x="981" y="766" class="body">Day / dose index counter</text>
+<rect x="1282" y="715" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="740" class="head">#30</text>
+<text x="1294" y="766" class="body">Schedule comparison routine</text>
+<rect x="30" y="835" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="860" class="head">#31</text>
+<text x="42" y="886" class="body">Four independent daily</text>
+<text x="42" y="908" class="body">schedule slots</text>
+<rect x="343" y="835" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="860" class="head">#32</text>
+<text x="355" y="886" class="body">Enable or disable each dose</text>
+<text x="355" y="908" class="body">slot</text>
+<rect x="656" y="835" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="860" class="head">#33</text>
+<text x="668" y="886" class="body">Weekday / weekend schedules</text>
+<rect x="969" y="835" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="860" class="head">#34</text>
+<text x="981" y="886" class="body">One-time schedule entry</text>
+<rect x="1282" y="835" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="860" class="head">#35</text>
+<text x="1294" y="886" class="body">Dose availability window</text>
+<rect x="30" y="955" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="980" class="head">#36</text>
+<text x="42" y="1006" class="body">Dose-completed state flag</text>
+<rect x="343" y="955" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="980" class="head">#37</text>
+<text x="355" y="1006" class="body">One motor movement per event</text>
+<text x="355" y="1028" class="body">ID</text>
+<rect x="656" y="955" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="980" class="head">#38</text>
+<text x="668" y="1006" class="body">Next-dose software lockout</text>
+<rect x="969" y="955" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="980" class="head">#39</text>
+<text x="981" y="1006" class="body">Cup-removal completion</text>
+<text x="981" y="1028" class="body">requirement</text>
+<rect x="1282" y="955" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="980" class="head">#40</text>
+<text x="1294" y="1006" class="body">Unique medication event</text>
+<text x="1294" y="1028" class="body">number</text>
+<rect x="30" y="1075" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1100" class="head">#41</text>
+<text x="42" y="1126" class="body">Load cell beneath dispensing</text>
+<text x="42" y="1148" class="body">cup</text>
+<rect x="343" y="1075" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1100" class="head">#42</text>
+<text x="355" y="1126" class="body">Wheatstone bridge and</text>
+<text x="355" y="1148" class="body">amplifier</text>
+<rect x="656" y="1075" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1100" class="head">#43</text>
+<text x="668" y="1126" class="body">Active low-pass filter</text>
+<rect x="969" y="1075" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1100" class="head">#44</text>
+<text x="981" y="1126" class="body">Automatic empty-cup tare</text>
+<rect x="1282" y="1075" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1100" class="head">#45</text>
+<text x="1294" y="1126" class="body">Threshold and hysteresis</text>
+<text x="1294" y="1148" class="body">algorithm</text>
+<rect x="30" y="1195" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1220" class="head">#46</text>
+<text x="42" y="1246" class="body">Microswitch</text>
+<rect x="343" y="1195" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1220" class="head">#47</text>
+<text x="355" y="1246" class="body">Magnetic reed switch</text>
+<rect x="656" y="1195" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1220" class="head">#48</text>
+<text x="668" y="1246" class="body">IR emitter and</text>
+<text x="668" y="1268" class="body">phototransistor</text>
+<rect x="969" y="1195" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1220" class="head">#49</text>
+<text x="981" y="1246" class="body">Lever limit switch</text>
+<rect x="1282" y="1195" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1220" class="head">#50</text>
+<text x="1294" y="1246" class="body">Bare Hall-effect sensor</text>
+<rect x="30" y="1315" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1340" class="head">#51</text>
+<text x="42" y="1366" class="body">Thermistor with active</text>
+<text x="42" y="1388" class="body">conditioning</text>
+<rect x="343" y="1315" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1340" class="head">#52</text>
+<text x="355" y="1366" class="body">Bare analog temperature IC</text>
+<rect x="656" y="1315" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1340" class="head">#53</text>
+<text x="668" y="1366" class="body">Transistor-junction</text>
+<text x="668" y="1388" class="body">temperature sensor</text>
+<rect x="969" y="1315" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1340" class="head">#54</text>
+<text x="981" y="1366" class="body">Thermocouple with amplifier</text>
+<rect x="1282" y="1315" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1340" class="head">#55</text>
+<text x="1294" y="1366" class="body">Programmable high / low</text>
+<text x="1294" y="1388" class="body">thresholds</text>
+<rect x="30" y="1435" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1460" class="head">#56</text>
+<text x="42" y="1486" class="body">Photodiode with</text>
+<text x="42" y="1508" class="body">transimpedance amplifier</text>
+<rect x="343" y="1435" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1460" class="head">#57</text>
+<text x="355" y="1486" class="body">Phototransistor with</text>
+<text x="355" y="1508" class="body">amplifier</text>
+<rect x="656" y="1435" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1460" class="head">#58</text>
+<text x="668" y="1486" class="body">LDR with active conditioning</text>
+<rect x="969" y="1435" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1460" class="head">#59</text>
+<text x="981" y="1486" class="body">Internal light-sensor window</text>
+<rect x="1282" y="1435" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1460" class="head">#60</text>
+<text x="1294" y="1486" class="body">Time-averaged light exposure</text>
+<rect x="30" y="1555" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1580" class="head">#61</text>
+<text x="42" y="1606" class="body">Four-digit seven-segment</text>
+<text x="42" y="1628" class="body">display</text>
+<rect x="343" y="1555" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1580" class="head">#62</text>
+<text x="355" y="1606" class="body">Parallel character LCD</text>
+<rect x="656" y="1555" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1580" class="head">#63</text>
+<text x="668" y="1606" class="body">Three dedicated status LEDs</text>
+<rect x="969" y="1555" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1580" class="head">#64</text>
+<text x="981" y="1606" class="body">Illuminated status labels</text>
+<rect x="1282" y="1555" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1580" class="head">#65</text>
+<text x="1294" y="1606" class="body">LED progress indicator</text>
+<rect x="30" y="1675" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1700" class="head">#66</text>
+<text x="42" y="1726" class="body">Piezo buzzer</text>
+<rect x="343" y="1675" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1700" class="head">#67</text>
+<text x="355" y="1726" class="body">Speaker driven by PWM and</text>
+<text x="355" y="1748" class="body">amplifier</text>
+<rect x="656" y="1675" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1700" class="head">#68</text>
+<text x="668" y="1726" class="body">Three-level electronic</text>
+<text x="668" y="1748" class="body">volume control</text>
+<rect x="969" y="1675" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1700" class="head">#69</text>
+<text x="981" y="1726" class="body">Escalating alarm pattern</text>
+<rect x="1282" y="1675" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1700" class="head">#70</text>
+<text x="1294" y="1726" class="body">Periodic reminder pattern</text>
+<rect x="30" y="1795" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1820" class="head">#71</text>
+<text x="42" y="1846" class="body">High-brightness flashing LED</text>
+<rect x="343" y="1795" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1820" class="head">#72</text>
+<text x="355" y="1846" class="body">Illuminated take-dose /</text>
+<text x="355" y="1868" class="body">acknowledge button</text>
+<rect x="656" y="1795" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1820" class="head">#73</text>
+<text x="668" y="1846" class="body">Light around medication cup</text>
+<rect x="969" y="1795" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1820" class="head">#74</text>
+<text x="981" y="1846" class="body">Different LED flash patterns</text>
+<rect x="1282" y="1795" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1820" class="head">#75</text>
+<text x="1294" y="1846" class="body">Large high-contrast labels</text>
+<rect x="30" y="1915" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="1940" class="head">#76</text>
+<text x="42" y="1966" class="body">Automatically position</text>
+<text x="42" y="1988" class="body">scheduled dose</text>
+<rect x="343" y="1915" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="1940" class="head">#77</text>
+<text x="355" y="1966" class="body">Single Take Dose button</text>
+<rect x="656" y="1915" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="1940" class="head">#78</text>
+<text x="668" y="1966" class="body">One-button silence /</text>
+<text x="668" y="1988" class="body">acknowledge</text>
+<rect x="969" y="1915" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="1940" class="head">#79</text>
+<text x="981" y="1966" class="body">Dedicated plus and minus</text>
+<text x="981" y="1988" class="body">buttons</text>
+<rect x="1282" y="1915" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="1940" class="head">#80</text>
+<text x="1294" y="1966" class="body">Hold-to-enter settings mode</text>
+<rect x="30" y="2035" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="2060" class="head">#81</text>
+<text x="42" y="2086" class="body">Dedicated error LED</text>
+<rect x="343" y="2035" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="2060" class="head">#82</text>
+<text x="355" y="2086" class="body">Numeric error codes</text>
+<rect x="656" y="2035" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="2060" class="head">#83</text>
+<text x="668" y="2086" class="body">Error beep patterns</text>
+<rect x="969" y="2035" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="2060" class="head">#84</text>
+<text x="981" y="2086" class="body">EEPROM event and error log</text>
+<rect x="1282" y="2035" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="2060" class="head">#85</text>
+<text x="1294" y="2086" class="body">Startup sensor self-test</text>
+<rect x="30" y="2155" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="2180" class="head">#86</text>
+<text x="42" y="2206" class="body">Tray-presence microswitch</text>
+<rect x="343" y="2155" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="2180" class="head">#87</text>
+<text x="355" y="2206" class="body">Keyed mechanical tray</text>
+<rect x="656" y="2155" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="2180" class="head">#88</text>
+<text x="668" y="2206" class="body">Optical tray-presence</text>
+<text x="668" y="2228" class="body">detector</text>
+<rect x="969" y="2155" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="2180" class="head">#89</text>
+<text x="981" y="2206" class="body">Alignment pin and slot</text>
+<rect x="1282" y="2155" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="2180" class="head">#90</text>
+<text x="1294" y="2206" class="body">Home-position sensor</text>
+<rect x="30" y="2275" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="2300" class="head">#91</text>
+<text x="42" y="2326" class="body">Store schedules locally in</text>
+<text x="42" y="2348" class="body">EEPROM</text>
+<rect x="343" y="2275" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="2300" class="head">#92</text>
+<text x="355" y="2326" class="body">Backup battery switchover</text>
+<text x="355" y="2348" class="body">circuit</text>
+<rect x="656" y="2275" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="2300" class="head">#93</text>
+<text x="668" y="2326" class="body">Supercapacitor ride-through</text>
+<rect x="969" y="2275" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="2300" class="head">#94</text>
+<text x="981" y="2326" class="body">Low-voltage warning</text>
+<rect x="1282" y="2275" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="2300" class="head">#95</text>
+<text x="1294" y="2326" class="body">Boot-state recovery</text>
+<rect x="30" y="2395" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="42" y="2420" class="head">#96</text>
+<text x="42" y="2446" class="body">Covered motor and gears</text>
+<rect x="343" y="2395" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="355" y="2420" class="head">#97</text>
+<text x="355" y="2446" class="body">Resettable polyfuse</text>
+<rect x="656" y="2395" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="668" y="2420" class="head">#98</text>
+<text x="668" y="2446" class="body">Reverse-polarity protection</text>
+<rect x="969" y="2395" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="981" y="2420" class="head">#99</text>
+<text x="981" y="2446" class="body">End-of-travel or position</text>
+<text x="981" y="2468" class="body">limit</text>
+<rect x="1282" y="2395" width="300" height="107" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1294" y="2420" class="head">#100</text>
+<text x="1294" y="2446" class="body">Separate electronics and</text>
+<text x="1294" y="2468" class="body">medication areas</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1040" width="1600" height="1040"><rect width="100%" height="100%" fill="#f4f7fb"/><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#16283e}.title{font-size:32px;font-weight:bold}.sub{font-size:18px}.head{font-size:21px;font-weight:bold}.body{font-size:17px}</style>
+<text x="36" y="51" class="title">Stage 3 | Original concept bins and revision</text>
+<text x="36" y="85" class="sub">Original selections are preserved below; added features complete gaps in the current requirements.</text>
+<rect x="30" y="125" width="505" height="680" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="45" y="162" class="head">1. Rotary carousel</text>
+<text x="45" y="195" class="body">Original feature IDs</text>
+<text x="45" y="232" class="body">#1, #6, #7, #11, #12, #19, #20, #25,</text>
+<text x="45" y="259" class="body">#26, #31, #36, #41, #43, #67, #71, #84,</text>
+<text x="45" y="286" class="body">#90</text>
+<text x="45" y="420" class="head">Revision emphasis</text>
+<text x="45" y="460" class="body">Add cup presence and secured pickup</text>
+<text x="45" y="560" class="body">Shared baseline: time display,</text>
+<text x="45" y="588" class="body">four schedules, cap/lid sensor,</text>
+<text x="45" y="616" class="body">sound and light, temperature,</text>
+<text x="45" y="644" class="body">light exposure, interlocks,</text>
+<text x="45" y="672" class="body">saved settings and event log,</text>
+<text x="45" y="700" class="body">guarded recovery and status export.</text>
+<rect x="553" y="125" width="505" height="680" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="568" y="162" class="head">2. Stationary tray and shutter</text>
+<text x="568" y="195" class="body">Original feature IDs</text>
+<text x="568" y="232" class="body">#3, #4, #11, #12, #21, #23, #25, #26,</text>
+<text x="568" y="259" class="body">#31, #36, #38, #46, #51, #56, #67, #71,</text>
+<text x="568" y="286" class="body">#84, #90</text>
+<text x="568" y="420" class="head">Revision emphasis</text>
+<text x="568" y="460" class="body">Add isolated whole-tray weighing</text>
+<text x="568" y="560" class="body">Shared baseline: time display,</text>
+<text x="568" y="588" class="body">four schedules, cap/lid sensor,</text>
+<text x="568" y="616" class="body">sound and light, temperature,</text>
+<text x="568" y="644" class="body">light exposure, interlocks,</text>
+<text x="568" y="672" class="body">saved settings and event log,</text>
+<text x="568" y="700" class="body">guarded recovery and status export.</text>
+<rect x="1076" y="125" width="505" height="680" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="1091" y="162" class="head">3. Linear cartridge</text>
+<text x="1091" y="195" class="body">Original feature IDs</text>
+<text x="1091" y="232" class="body">#2, #5, #6, #7, #11, #17, #19, #20,</text>
+<text x="1091" y="259" class="body">#26, #31, #36, #41, #43, #49, #66, #71,</text>
+<text x="1091" y="286" class="body">#84, #90, #99</text>
+<text x="1091" y="420" class="head">Revision emphasis</text>
+<text x="1091" y="460" class="body">Add cup presence and independent limits</text>
+<text x="1091" y="560" class="body">Shared baseline: time display,</text>
+<text x="1091" y="588" class="body">four schedules, cap/lid sensor,</text>
+<text x="1091" y="616" class="body">sound and light, temperature,</text>
+<text x="1091" y="644" class="body">light exposure, interlocks,</text>
+<text x="1091" y="672" class="body">saved settings and event log,</text>
+<text x="1091" y="700" class="body">guarded recovery and status export.</text>
+<rect x="30" y="835" width="1540" height="145" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="50" y="870" class="head">Retained idea bank</text>
+<text x="50" y="907" class="body">All original ideas remain in Stage 1. Ideas #101–#115 are proposed refinements, not a claim of a past team meeting.</text>
+<text x="50" y="941" class="body">Common features can be reused across concepts. No final concept has been selected in this revision.</text>
+</svg>

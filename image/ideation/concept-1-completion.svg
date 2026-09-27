@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1230" viewBox="0 0 1600 1230"><defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#415e7e"/></marker></defs><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#16283e}.title{font-size:32px;font-weight:bold}.head{font-size:21px;font-weight:bold}.body{font-size:18px}.tiny{font-size:16px}</style><rect width="1600" height="1230" fill="#f4f7fb"/>
+<text x="35" y="50" class="title">Concept 1 | Rotary carousel — completion schematic</text>
+<text x="35" y="84" class="body">Added interfaces and common functions. Conceptual layout only; geometry and performance are not validated.</text>
+<rect x="30" y="115" width="485" height="148" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="46" y="146" class="head">Refill and storage</text>
+<text x="46" y="176" class="body">#11–17, #21, #25, #46, #86–89, #108</text>
+<text x="46" y="199" class="body">Keyed cleanable tray; lock and lid switch;</text>
+<text x="46" y="222" class="body">missing-tray interlock; refill mode.</text>
+<rect x="557" y="115" width="485" height="148" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="573" y="146" class="head">Temperature and light</text>
+<text x="573" y="176" class="body">#51, #55–56, #59–60</text>
+<text x="573" y="199" class="body">Sense inside the storage area. Use</text>
+<text x="573" y="222" class="body">conditioned analog signals and selected</text>
+<text x="573" y="245" class="body">warning thresholds.</text>
+<rect x="1085" y="115" width="485" height="148" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="1101" y="146" class="head">User controls and status</text>
+<text x="1101" y="176" class="body">#62, #67–68, #71–83, #113</text>
+<text x="1101" y="199" class="body">Time/status display; adjustable sound;</text>
+<text x="1101" y="222" class="body">visible reminders; dose, settings and</text>
+<text x="1101" y="245" class="body">acknowledge controls.</text>
+<rect x="520" y="325" width="555" height="340" rx="22" fill="#dce8f5" stroke="#416388" stroke-width="3"/>
+<circle cx="690" cy="460" r="99" fill="#f8fcff" stroke="#42678d" stroke-width="4"/>
+<line x1="690" y1="460" x2="789.0" y2="460.0" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="775.7" y2="509.5" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="739.5" y2="545.7" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="690.0" y2="559.0" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="640.5" y2="545.7" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="604.3" y2="509.5" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="591.0" y2="460.0" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="604.3" y2="410.5" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="640.5" y2="374.3" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="690.0" y2="361.0" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="739.5" y2="374.3" stroke="#8da8c4" stroke-width="2"/>
+<line x1="690" y1="460" x2="775.7" y2="410.5" stroke="#8da8c4" stroke-width="2"/>
+<text x="603" y="597" class="body">Rotating dose tray</text>
+<path d="M790 460 L875 500" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="872" y="485" width="140" height="117" rx="8" fill="white" stroke="#42678d" stroke-width="3"/>
+<text x="896" y="529" class="body">Cup</text>
+<text x="884" y="569" class="tiny">Load cell</text>
+<text x="826" y="642" class="tiny">Secured pickup bay</text>
+<rect x="30" y="328" width="450" height="154" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="46" y="359" class="head">Motion and protection</text>
+<text x="46" y="389" class="body">#19–20, #90, #96, #99, #105</text>
+<text x="46" y="412" class="body">Known position, stall monitoring, covered</text>
+<text x="46" y="435" class="body">drive. Stop on fault; no blind advance or</text>
+<text x="46" y="458" class="body">extra dose.</text>
+<path d="M480 409 L520 460" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="1120" y="328" width="450" height="180" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="1136" y="359" class="head">Weight measurement</text>
+<text x="1136" y="389" class="body">#41–45, #102, #104</text>
+<text x="1136" y="412" class="body">Cup presence plus amplified/filtered</text>
+<text x="1136" y="435" class="body">weight signal. Distinguish cup pickup,</text>
+<text x="1136" y="458" class="body">pill removal and uncertainty.</text>
+<path d="M1120 420 L1034 551" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="30" y="516" width="450" height="170" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="46" y="547" class="head">Controlled user access</text>
+<text x="46" y="577" class="body">#103, #114 | Pickup hatch</text>
+<text x="46" y="600" class="body">Secure an uncollected dose without</text>
+<text x="46" y="623" class="body">pinching. Block the next release until</text>
+<text x="46" y="646" class="body">the previous dose is resolved.</text>
+<path d="M480 584 L520 584" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="1120" y="541" width="450" height="145" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="1136" y="572" class="head">Mechanism-specific checks</text>
+<text x="1136" y="602" class="body">#86, #90 | Tray present and home position</text>
+<text x="1136" y="625" class="body">Keep refill-lid, position, and weighing</text>
+<text x="1136" y="648" class="body">signals independent.</text>
+<path d="M1120 614 L1075 614" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M270 263 L606 325" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M795 263 L800 325" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M1300 263 L1030 325" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<text x="35" y="750" class="head">Shared electronics and firmware inside the guarded enclosure</text>
+<rect x="30" y="780" width="485" height="180" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="46" y="811" class="head">Schedule and event control</text>
+<text x="46" y="841" class="body">#26, #28, #30–38, #40, #91, #107, #110–111</text>
+<text x="46" y="864" class="body">Clock + backup; four schedules; event IDs;</text>
+<text x="46" y="887" class="body">duplicate rejection; persistent state. Do not</text>
+<text x="46" y="910" class="body">re-release after restart.</text>
+<rect x="557" y="780" width="485" height="180" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="573" y="811" class="head">Power and board interfaces</text>
+<text x="573" y="841" class="body">#92–98, #100, #106</text>
+<text x="573" y="864" class="body">Four distinct PIC subsystem PCBs; own 9 V</text>
+<text x="573" y="887" class="body">input and 5 V regulator; specified 2×4</text>
+<text x="573" y="910" class="body">signal/ground interface; protected, retained</text>
+<text x="573" y="933" class="body">wiring.</text>
+<rect x="1085" y="780" width="485" height="180" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="1101" y="811" class="head">Records and verification</text>
+<text x="1101" y="841" class="body">#84–85, #104, #109, #114–115</text>
+<text x="1101" y="864" class="body">Access/removal/missed/uncertain log; local</text>
+<text x="1101" y="887" class="body">UART status; guided checks; uncollected-dose</text>
+<text x="1101" y="910" class="body">hold. Removal is not ingestion.</text>
+<path d="M515 865 L557 865" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M1042 865 L1085 865" stroke="#415e7e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="30" y="1000" width="1540" height="172" rx="10" fill="white" stroke="#b5c6d9" stroke-width="2"/>
+<text x="46" y="1031" class="head">Operating sequence</text>
+<text x="46" y="1061" class="body">Reminder → one button request → verify tray, lid, cup/access guard, position and previous event → controlled mechanism action → stable removal check →</text>
+<text x="46" y="1084" class="body">save event.</text>
+<text x="46" y="1107" class="body">Any failed or uncertain check: stop movement, show a fault, retain the event state, and request caregiver recovery.</text>
+<text x="46" y="1130" class="body">Backup motor operation and remote phone notifications are development questions; neither is established by this schematic.</text>
+</svg>
