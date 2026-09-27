@@ -1,22 +1,26 @@
- Ideation and Concept Generation
+---
+title: Ideation and Concept Generation
+---
+
+# Ideation and Concept Generation
 
 ## Project overview
 
 Project Aurora is a smart medication storage device for adults who take several scheduled medications each day. The main users include older adults who want to manage their routine independently. Caregivers also need a simple way to refill the device, change the schedule, and check medication events.
 
-The goal of this assignment is to compare three ways of providing the scheduled dose while keeping future doses unavailable. Each concept combines medication storage, weight and cap/lid sensing, reminders, and monitoring of storage conditions. These are design proposals; the drawings and rankings do not mean the mechanisms have been built or tested.
+The goal of this assignment is to compare three ways of providing the scheduled dose while keeping future doses unavailable. Each concept combines medication storage, weight and cap/lid sensing, reminders, and monitoring of storage conditions. These three concepts will help us compare options before choosing a design to prototype.
 
 Weight and access sensors can provide evidence that medication was removed or accessed. They cannot confirm that someone swallowed it.
 
 ## 1. Requirements and priorities
 
-The starting requirements come from our [User Needs and Benchmarking](03-User-Needs-and%20Benchmarking.md) and [Product Requirements](04-Product-Requirements.md) pages. The published user-needs page uses a 1–5 priority scale, and the product requirements identify Must and Should items.
+The starting requirements come from our [User Needs and Benchmarking](03-User-Needs-and%20Benchmarking.md) and [Product Requirements](04-Product-Requirements.md) pages. Our user-needs research uses a 1–5 priority scale, and the product requirements identify Must and Should items.
 
-This revision uses those priorities to focus the concepts. Priority-5 needs and Must requirements receive the most attention, especially preventing repeated dispensing, maintaining the correct time, detecting removal and access, and making reminders understandable. Refill, cleaning, environmental monitoring, and customization remain important supporting functions. Remote monitoring remains an idea to develop without making basic operation depend on an internet connection.
+Our concepts focus on the highest-priority user needs and Must requirements, especially preventing repeated dispensing, maintaining the correct time, detecting removal and access, and making reminders understandable. Refill, cleaning, environmental monitoring, and customization remain important supporting functions. Remote monitoring remains an idea to develop without making basic operation depend on an internet connection.
 
-The user-need priorities guide which functions deserve attention; they are not the same as the feature evaluation scores later in this page. A high feature score does not allow a concept to omit a Must requirement.
+We use these priorities to shortlist useful features. Each concept still needs to meet the Must requirements, even when another feature seems easier to build.
 
-| Focus | Published priority or requirement | Features considered |
+| Focus | Priority or requirement | Features considered |
 | --- | --- | --- |
 | Dose separation and controlled access | Priority 5; PD1, SF1, SF2 | 1–5, 21–25, 36–40 |
 | Accurate timing and saved schedules | Priority 5; SW1–SW4, C1–C2 | 26–38, 79–80, 91, 95 |
@@ -29,21 +33,15 @@ The user-need priorities guide which functions deserve attention; they are not t
 
 ### Course constraints that affect the concepts
 
-The Fall 2026 project description requires one individually designed subsystem PCB per teammate, with a PIC18F57Q43 Curiosity Nano, a 5 V linear regulator, and a barrel jack for the 9 V supply. The team needs distinct sensing and actuation functions. Peripheral daughterboards are not permitted for the graded project functions.
+Each teammate must design a subsystem PCB using the PIC18F57Q43 Curiosity Nano, the required power circuit, and the specified board connector. The project needs distinct sensing and actuation functions built with our own circuits. Ready-made peripheral boards cannot replace the graded functions, and a standalone LED, switch, or buzzer does not meet the complex sensing or actuation requirement by itself.
 
-A possible four-board division is (1) load-cell measurement with a custom amplifier and filter, (2) motor control with a custom bidirectional driver circuit, (3) photodiode light sensing with a transimpedance amplifier, and (4) audible reminders using PWM with filtering and amplification. Temperature and cap/lid sensing can be supporting functions on these boards. This is a proposed division, not a confirmed assignment to individual teammates.
-
-Boards must use the specified 2×4 IDC interface: pins 1–5 digital I/O, pins 6–7 analog I/O, and pin 8 ground. The connector has no assigned supply pin. Signal direction, voltage levels, and ownership must be defined before connecting boards. The next block-diagram assignment will develop this interface further.
-
-The RTC interface, load-cell resolution, motor driver, enclosure, and total cost still need component-level checks. The published course budget is $60 per team member, or $240 for four members, subject to the course's stated exclusions. A standalone buzzer, LED, or switch does not by itself satisfy the complex actuator or analog-sensor requirement.
+The course budget is $60 per team member, subject to the course exclusions. We will work out subsystem assignments, connector pinouts, and signal directions in the block-diagram assignment after comparing the concepts.
 
 ## 2. Initial brainstorm record
 
-The table below preserves the 100 numbered entries in the supplied design-ideation draft before the revisions on this page. Each entry names a need, a feature, and how that feature might work. Similar alternatives are intentionally retained: for example, #12 and #87 both address keyed tray installation, so 100 numbered entries should not be confused with 100 entirely different mechanisms.
+The table below lists the initial ideas, the needs they address, and how they could work. Ideas #12 and #87 both describe keyed tray installation. We keep both entries in this initial list and combine them during refinement.
 
-![Stage 1 export of the original 100 numbered ideas](image/ideation/stage-1-original.svg)
-
-*Stage 1 is an export of the original table, not a photograph of a brainstorming meeting. The readable text record is below.*
+*Initial idea list.*
 
 | Idea | Requirement or need | Feature | Detail |
 | --- | --- | --- | --- |
@@ -82,16 +80,16 @@ The table below preserves the 100 numbered entries in the supplied design-ideati
 | 33 | Flexible scheduling | Weekday / weekend schedules | The device can use a different set of dose times for different daily routines. |
 | 34 | Flexible scheduling | One-time schedule entry | A temporary dose can be added without changing the normal repeating schedule. |
 | 35 | Flexible medication timing | Dose availability window | A dose can remain available for a defined time window instead of being limited to one exact minute. |
-| 36 | Prevent double dosing | Dose-completed state flag | Once a scheduled dose is recorded as completed, the same event cannot be completed again. |
+| 36 | Prevent double dosing | Dose-event state flag | The controller tracks whether a scheduled dose was released and whether removal was detected, so it can reject repeated release requests. |
 | 37 | Prevent double dispensing | One motor movement per event ID | Each medication event can command the dispensing mechanism only once unless an authorized recovery is running. |
 | 38 | Prevent early medication | Next-dose software lockout | The next compartment stays unavailable until its programmed dose window begins. |
-| 39 | Confirm dose completion | Cup-removal completion requirement | The event is not marked complete until the system detects that medication was removed. |
+| 39 | Detect dose collection | Weight-supported removal check | A stable weight change supports a removal record; lifting the cup alone records access until the result can be checked. |
 | 40 | Keep medication history organized | Unique medication event number | Each scheduled dose receives an ID so the system can distinguish normal, repeated, missed, and error events. |
 | 41 | Detect medication removal | Load cell beneath dispensing cup | A load cell measures the change in weight when the dose is present and when it is removed. |
 | 42 | Measure load-cell signal | Wheatstone bridge and amplifier | The small load-cell signal is amplified into a range that the PIC ADC can measure reliably. |
 | 43 | Stabilize weight measurement | Active low-pass filter | The analog signal is filtered to reduce vibration and electrical noise before ADC measurement. |
 | 44 | Accurate weight measurement | Automatic empty-cup tare | The device stores the empty-cup value so measurements are based on the medication weight, not the cup weight. |
-| 45 | Reliable medication detection | Threshold and hysteresis algorithm | The firmware ignores small weight changes so vibration does not create false medication-removal events. |
+| 45 | Reliable medication detection | Threshold and hysteresis algorithm | The firmware ignores small weight changes to help reduce false removal readings caused by vibration. |
 | 46 | Detect lid / cap access | Microswitch | A small mechanical switch changes state when the lid is opened or closed. |
 | 47 | Detect lid / cap access | Magnetic reed switch | A magnet and reed switch provide non-contact lid open/closed detection. |
 | 48 | Detect lid / cap access | IR emitter and phototransistor | The lid blocks or reflects an optical beam to indicate its position. |
@@ -108,8 +106,8 @@ The table below preserves the 100 numbered entries in the supplied design-ideati
 | 59 | Measure medication exposure | Internal light-sensor window | The light sensor is positioned to measure light reaching the medication instead of general room light. |
 | 60 | Avoid false light warnings | Time-averaged light exposure | A warning is generated only when excessive light continues for a set amount of time. |
 | 61 | Show time and status | Four-digit seven-segment display | The device shows the current time and short numeric status or error codes. |
-| 62 | Show detailed status | Parallel character LCD | The display can show short messages such as READY, TAKEN, MISSED, or ERROR. |
-| 63 | Show status simply | Three dedicated status LEDs | Separate indicators show ready, taken, and error states without requiring menu navigation. |
+| 62 | Show detailed status | Parallel character LCD | The display can show short messages such as READY, REMOVED, MISSED, or ERROR. |
+| 63 | Show status simply | Three dedicated status LEDs | Separate indicators show ready, removed, and error states without requiring menu navigation. |
 | 64 | Improve accessibility | Illuminated status labels | Large words such as READY or ERROR light up so the user can understand the device quickly. |
 | 65 | Show upcoming medication | LED progress indicator | A small row of LEDs gives a simple indication of how close the next medication time is. |
 | 66 | Provide audible reminders | Piezo buzzer | A buzzer provides a simple audible alert when medication is ready. |
@@ -130,7 +128,7 @@ The table below preserves the 100 numbered entries in the supplied design-ideati
 | 81 | Clearly indicate failures | Dedicated error LED | A separate indicator immediately shows that the device needs attention. |
 | 82 | Support troubleshooting | Numeric error codes | Short codes identify specific faults such as jam, missing tray, or sensor error. |
 | 83 | Support accessible troubleshooting | Error beep patterns | Basic fault types can also be communicated through different audible patterns. |
-| 84 | Keep medication history | EEPROM event and error log | Taken, missed, and fault events stay stored after power is removed. |
+| 84 | Keep medication history | EEPROM event and error log | Removed, missed, and fault events stay stored after power is removed. |
 | 85 | Check system health | Startup sensor self-test | The firmware checks important sensors and states before normal operation is enabled. |
 | 86 | Detect installed medication tray | Tray-presence microswitch | The dispenser is prevented from operating when the medication tray is missing. |
 | 87 | Prevent incorrect tray installation | Keyed mechanical tray | The tray geometry prevents installation in the wrong orientation. |
@@ -152,11 +150,9 @@ The table below preserves the 100 numbered entries in the supplied design-ideati
 
 ### Functional groups
 
-The original draft sorts all 100 ideas into seven functional groups. Every original idea appears once in this grouping. Features may later be reused in more than one product concept.
+We organized the 100 ideas into seven functional groups. Each idea appears once below, although a feature can be used in more than one concept.
 
-![Stage 2 functional groups and original shortlists](image/ideation/stage-2-groups.svg)
-
-*Stage 2 reconstructs the grouping already recorded in the Word draft.*
+*Initial ideas organized into seven functional groups.*
 
 | Group | Idea IDs | Purpose |
 | --- | --- | --- |
@@ -168,51 +164,49 @@ The original draft sorts all 100 ideas into seven functional groups. Every origi
 | Interface, reminders, and accessibility | 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83 | Provide understandable displays, controls, sounds, and lights. |
 | Reliability, power, and electrical protection | 84, 85, 92, 93, 94, 97, 98 | Keep records, check the system, and protect the power and electronics. |
 
-### Ranking method
+### Qualitative shortlist
 
-The original draft uses five equally weighted criteria scored from 1 to 5: requirement fit, feasibility, course fit, integration, and reliability/safety. A score of 1 means a weak fit or a major unresolved difficulty, 3 means a reasonable option with development work, and 5 means a strong fit at this concept stage. The maximum total is 25.
+We compare the ideas using five questions: Does the feature meet an important requirement? Can we build it? Does it fit the course requirements? Will it work with the other subsystems? Does it support reliable and safe operation?
 
-The table below retains the original total scores and orders the shortlisted features from highest to lowest within each group. Equal totals are ties. The supplied draft does not include the five individual scores behind each total, so these totals are provisional judgments, not measured performance or a verified team vote. Before selecting a final concept, the team should record the criterion-level scores together.
+The table lists promising features and the reason for keeping each one. It is a qualitative shortlist, with no numerical ranking or order of preference. We will compare performance through prototype tests before choosing a final concept. Other ideas remain available in the initial list.
 
-A feature that cannot meet a Must requirement or course constraint must be revised regardless of its score. Features that are not shortlisted remain available in the original idea bank.
-
-| Group | Idea | Shortlisted feature | Original total | Reason in the original draft |
-| --- | --- | --- | --- | --- |
-| Medication storage, security, and refill | #1 | Indexed rotary medication carousel | 25/25 | Good for separating doses and works well with one motor. |
-| Medication storage, security, and refill | #11 | Removable medication tray | 24/25 | Makes refill and cleaning easier. |
-| Medication storage, security, and refill | #12 | Keyed tray orientation | 23/25 | Simple way to prevent putting the tray in backward. |
-| Dispensing mechanism and mechanical safety | #90 | Home-position sensor | 25/25 | Gives the mechanism a known starting position. |
-| Dispensing mechanism and mechanical safety | #20 | Motor-current jam detection | 23/25 | Can detect when the motor is stalled. |
-| Dispensing mechanism and mechanical safety | #19 | Automatic reverse-and-retry | 22/25 | Gives the device one simple way to recover from a jam. |
-| Scheduling, dose logic, and local data | #26 | RTC for local timekeeping | 25/25 | Keeps accurate time without needing internet. |
-| Scheduling, dose logic, and local data | #36 | Dose-completed state flag | 25/25 | Helps prevent the same dose from being counted twice. |
-| Scheduling, dose logic, and local data | #37 | One dispense per medication event | 25/25 | Prevents a second dispense for the same scheduled dose. |
-| Medication removal and access sensing | #43 | Active low-pass filter | 25/25 | Makes the weight signal more stable. |
-| Medication removal and access sensing | #45 | Threshold + hysteresis in software | 25/25 | Prevents vibration from causing false readings. |
-| Medication removal and access sensing | #41 | Load cell under dispensing cup | 24/25 | Directly checks when medication is in the cup and when it is removed. |
-| Environmental monitoring | #51 | Thermistor with signal conditioning | 25/25 | Simple way to measure storage temperature. |
-| Environmental monitoring | #56 | Photodiode with amplifier | 24/25 | Measures light exposure using an analog circuit. |
-| Environmental monitoring | #55 | Temperature warning thresholds | 24/25 | Turns the temperature reading into a useful warning. |
-| Interface, reminders, and accessibility | #71 | High-brightness flashing LED | 24/25 | Provides a simple visual reminder. |
-| Interface, reminders, and accessibility | #72 | Illuminated Take Dose button | 24/25 | Makes the normal user action obvious. |
-| Interface, reminders, and accessibility | #67 | Speaker with PWM and amplifier | 23/25 | Provides clear audible reminders. |
-| Reliability, power, and electrical protection | #84 | EEPROM event/error log | 25/25 | Stores taken, missed, and error events. |
-| Reliability, power, and electrical protection | #85 | Startup sensor self-test | 25/25 | Checks important parts before normal operation. |
-| Reliability, power, and electrical protection | #94 | Low-voltage warning | 23/25 | Warns before the supply becomes unreliable. |
+| Group | Idea | Shortlisted feature | Reason to keep it |
+| --- | --- | --- | --- |
+| Medication storage, security, and refill | #1 | Indexed rotary medication carousel | Good for separating doses and works well with one motor. |
+| Medication storage, security, and refill | #11 | Removable medication tray | Makes refill and cleaning easier. |
+| Medication storage, security, and refill | #12 / #87 | Keyed tray orientation | Simple way to prevent putting the tray in backward. |
+| Dispensing mechanism and mechanical safety | #90 | Home-position sensor | Gives the mechanism a known starting position. |
+| Dispensing mechanism and mechanical safety | #20 | Motor-current jam detection | Can detect when the motor is stalled. |
+| Dispensing mechanism and mechanical safety | #19 | Automatic reverse-and-retry | Gives the device one simple way to recover from a jam. |
+| Scheduling, dose logic, and local data | #26 | RTC for local timekeeping | Keeps accurate time without needing internet. |
+| Scheduling, dose logic, and local data | #36 | Dose-event state flag | Helps prevent the same dose from being counted twice. |
+| Scheduling, dose logic, and local data | #37 | One dispense per medication event | Prevents a second dispense for the same scheduled dose. |
+| Medication removal and access sensing | #43 | Active low-pass filter | Makes the weight signal more stable. |
+| Medication removal and access sensing | #45 | Threshold + hysteresis in software | Helps reduce false readings caused by vibration. |
+| Medication removal and access sensing | #41 | Load cell under dispensing cup | Directly checks when medication is in the cup and when it is removed. |
+| Environmental monitoring | #51 | Thermistor with signal conditioning | Simple way to measure storage temperature. |
+| Environmental monitoring | #56 | Photodiode with amplifier | Measures light exposure using an analog circuit. |
+| Environmental monitoring | #55 | Temperature warning thresholds | Turns the temperature reading into a useful warning. |
+| Interface, reminders, and accessibility | #71 | High-brightness flashing LED | Provides a simple visual reminder. |
+| Interface, reminders, and accessibility | #72 | Illuminated Take Dose button | Makes the normal user action obvious. |
+| Interface, reminders, and accessibility | #67 | Speaker with PWM and amplifier | Provides clear audible reminders. |
+| Reliability, power, and electrical protection | #84 | EEPROM event/error log | Stores removed, missed, and error events. |
+| Reliability, power, and electrical protection | #85 | Startup sensor self-test | Checks important parts before normal operation. |
+| Reliability, power, and electrical protection | #94 | Low-voltage warning | Warns before the supply becomes unreliable. |
 
 ### Interpretation and refinements
 
 The carousel, removable tray, and keyed fit provide a useful storage combination. Homing and stall detection support controlled movement, but a retry must not release an additional dose. An RTC is a useful timing candidate, although its actual accuracy, backup circuit, and communication interface still need testing. Filtering and hysteresis may reduce false weight readings; neither can guarantee reliable detection without calibration and a suitable load cell.
 
-The shutter concept needs special attention because the original description did not provide the weight sensing required by SW5. All three concepts also need explicit time displays, cap/lid sensing, missing-tray protection, and a way to handle an uncollected dose. The refinements below address these gaps by combining earlier ideas.
+The stationary tray needs a way to measure dose removal, and all three designs need clear access sensing and a way to handle uncollected doses. Ideas #12 and #87 are combined into one keyed-tray feature so they are not counted as separate improvements.
 
-These are proposed additions made during this document revision. They should be reviewed by the team; they are not presented as evidence of a discussion that was not recorded.
+The following proposed refinements address gaps in the three concepts.
 
 | New ID | Need | Refined feature | Built from | How it works | Requirement link |
 | --- | --- | --- | --- | --- | --- |
 | 101 | Weight sensing for the shutter concept | Isolated weighing platform under the stationary tray | 41, 42, 43, 45 | Mount the tray on a load cell independently of the motor and cover. Compare stable readings before and after access; reject readings while a hand touches the tray. | SW5 |
 | 102 | Reliable cup measurements | Independent cup-presence switch | 39, 41, 44 | Distinguish a missing cup from a cup with medication removed. Block dispensing if the cup is absent. | SW5, SF4 |
-| 103 | Secure expired doses | Lockable pickup hatch | 4, 21, 35, 38 | Place the cup behind a monitored hatch so an uncollected dose can be secured. Do not close a powered barrier on a hand. If it cannot secure the dose, stop and request help. | PD1, SF1 |
+| 103 | Secure uncollected doses | Lockable pickup hatch | 4, 21, 35, 38 | Place the cup behind a monitored hatch so an uncollected dose can be secured. Do not close a powered barrier on a hand. If it cannot secure the dose, stop and request help. | PD1, SF1 |
 | 104 | Unambiguous medication records | Separate access, removal, missed, and uncertain states | 36, 39, 40, 84 | Opening a lid or removing a cup records access only. Stable weight change supports removal. No sensor result is labeled proof that medication was swallowed. | SW5, SW6, SF2 |
 | 105 | Safer fault recovery | Recovery limited to the same compartment | 19, 20, 37, 90 | Allow at most one controlled retry only when position is known and no dose release was detected. Otherwise stop for caregiver recovery. Never advance to another dose to clear a fault. | SW3, SF2, SF4 |
 | 106 | Detect stalled team communication | Board heartbeat and timeout | 85, 95 | Each subsystem reports that it is active. A missing required response blocks a new dispense and shows an error. | M1, M4, SF4 |
@@ -228,28 +222,29 @@ These are proposed additions made during this document revision. They should be 
 
 ## 4. Three product concepts
 
-![Stage 3 original concept selections and revision priorities](image/ideation/stage-3-concepts.svg)
+The concepts use three different mechanisms: a rotary carousel, a stationary tray with a rotating shutter, and a linear cartridge.
 
-*Stage 3 preserves the original concept selections and identifies what this revision adds. The full original idea bank remains above; unused alternatives are not deleted.*
+### Features shared by all three concepts
 
-### Shared features required in all three concepts
+**Essential functions.** Each concept includes scheduling, controlled access, removal and lid sensing, reminders, event records, and fault handling. We also include temperature and light monitoring to support our storage-condition objective. The mechanism and location of the load cell differ between designs.
 
-These features form the common baseline. The mechanism and method of weighing differ between concepts, but the following functions stay in each design.
-
-| Idea IDs | Common feature | Requirements | Purpose |
+| Idea IDs | Shared feature | Requirements | Purpose |
 | --- | --- | --- | --- |
 | 26, 28, 30–32, 110 | RTC, clock validation, and four individually editable schedules | SW1–SW2, C1–C2 | Keep time and start each event within the ±1 minute requirement; verify accuracy by test. |
 | 36–38, 40, 104, 107, 111, 114 | Event IDs, lockout, persistent event state, and uncollected-dose hold | SW3–SW4, SF2 | Reject repeated release requests, retain schedules, and block a later dose while the previous one is unresolved. |
 | 41–45, 101 or 102 | Load cell, bridge amplifier, active filter, and stable measurement logic | SW5 | Sense removal using the cup in Concepts 1 and 3, or the isolated tray in Concept 2. |
-| 21, 25, 46 | Locking refill lid with cap/lid switch and motor interlock | SW6, SF1, SF5 | Record open/closed access and inhibit motor movement while the lid is open. Treat this enclosure lid as the medication-container cap. |
+| 21, 25, 46 or 49 | Locking refill lid with cap/lid switch and motor interlock | SW6, SF1, SF5 | Record open/closed access and inhibit motor movement while the lid is open. Treat this enclosure lid as the medication-container cap. |
 | 51, 55–56, 59–60 | Temperature and light sensing with configurable warnings | SW7 | Measure conditions at the storage area; choose thresholds for the intended medication conditions before testing. |
-| 62, 67–68, 71–72, 75, 78–83, 113 | Time/status display, speaker, LED, simple buttons and reminder settings | UX1–UX4, C1–C3 | Show time, ready, missed, and fault states; provide normal sound-and-light reminders and adjustable optional sound. |
-| 11–17, 87, 89, 100 | Removable, keyed, cleanable dose tray and separated electronics | PD1–PD4, M2–M3, SF5 | Keep doses separated, make refill understandable, and allow cleaning without reaching live wiring or gears. |
+| 62, 67–68, 71–72, 75, 78–83 | Time/status display, speaker, LED, simple buttons and reminder settings | UX1–UX4, C1–C3 | Show time, ready, missed, and fault states; provide sound-and-light reminders with adjustable volume. |
+| 11–14, 16–17, 87, 89, 100 | Removable, keyed, cleanable dose tray and separated electronics | PD1–PD4, M2–M3, SF5 | Keep doses separated, make refill understandable, and allow cleaning without reaching live wiring or gears. |
 | 20, 25, 85–86, 90, 96, 99, 105, 108 | Tray/lid interlocks, homing, guarded mechanism and controlled recovery | M4, SF3–SF5 | Verify position and installation before motion; stop and indicate faults rather than releasing an uncertain dose. |
-| 84, 91–95, 97–98, 106, 110–111 | Saved settings, power checks, circuit protection and restart checks | SW4, SW8, M1, M4 | Core operation is local. After a power interruption, recover safely without an automatic repeated dispense. |
-| 109, 115 | Wired status reporting and guided functional check | Caregiver needs, M4 | Demonstrate readable event messages and test the completed prototype with test objects. |
+| 84, 91, 94–95, 97–98, 106, 110–111 | Saved settings, power checks, circuit protection and restart checks | SW4, SW8, M1, M4 | Core operation is local. After a power interruption, recover safely without an automatic repeated dispense. |
 
-The common baseline includes the local display, environmental sensors, power circuits, interlocks, and software even where an original illustration omits them. The drawings below preserve the original concept art; the completion notes and feature tables define the revised concepts.
+**Optional improvements.** Wired UART status export (#109) could send event messages to a connected computer. A filling guide (#15), additional visual indicators (#63–65 and #73–74), and quiet-hour reminder settings (#113) could make the device easier to use. These options are separate from the essential functions.
+
+**Power and caregiver support.** The backup-power approach (#92 or #93) and remote notification method still need to be selected. Saving settings and backing up the clock do not keep the motor running during an outage. A guided test mode (#115) could help us check the assembled prototype.
+
+The schematics below show each proposed mechanism together with its access protection and weighing arrangement. Scheduling, the display, reminders, and environmental sensors are included in every design.
 
 A low-weight reading alone is not enough to report removal. The software must know whether the cup or tray is installed, whether the mechanism is moving, and whether the reading is stable. A failed or ambiguous measurement produces an uncertain state.
 
@@ -257,19 +252,54 @@ A low-weight reading alone is not enough to report removal. The software must kn
 
 A removable circular tray stores preloaded doses. At the scheduled time, the device shows a reminder. One press of the illuminated dose button requests release after the interlocks pass. A motor rotates the scheduled compartment to a chute, which delivers medication to a cup on a load cell. Future compartments stay covered.
 
-![Annotated rotary carousel dispenser concept](image/ideation/concept-1-carousel.png)
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="concept-1-title" style="max-width:100%;height:auto;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px">
+<title id="concept-1-title">Concept 1 — Rotary carousel dispenser</title>
+<text x="28" y="38" font-family="Arial,sans-serif" font-size="25" fill="#1e293b" font-weight="bold" text-anchor="start">Concept 1 — Rotary carousel dispenser</text>
+<text x="28" y="64" font-family="Arial,sans-serif" font-size="15" fill="#475569" font-weight="normal" text-anchor="start">Proposed arrangement • schematic, not to scale</text>
+<rect x="24" y="86" width="545" height="400" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+<rect x="592" y="86" width="344" height="400" rx="10" fill="#eef2ff" stroke="#a5b4fc" stroke-width="2"/>
+<circle cx="174" cy="232" r="100" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<path d="M 174 232 L 274.0 232.0" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 174 232 L 244.71067811865476 302.71067811865476" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 174 232 L 174.0 332.0" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 174 232 L 103.28932188134526 302.71067811865476" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 174 232 L 74.0 232.0" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 174 232 L 103.28932188134523 161.28932188134524" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 174 232 L 173.99999999999997 132.0" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 174 232 L 244.71067811865476 161.28932188134524" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<circle cx="174" cy="232" r="24" fill="#2563eb"/>
+<text x="174" y="124" font-family="Arial,sans-serif" font-size="18" fill="#1e293b" font-weight="bold" text-anchor="middle">Rotary dose tray #1</text>
+<text x="174" y="357" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Guarded motor</text>
+<text x="174" y="383" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Home sensor #90</text>
+<path d="M 272 248 L 333 248" stroke="#475569" stroke-width="3" fill="none"/>
+<path d="M 333 248 L 333 293" stroke="#475569" stroke-width="3" fill="none"/>
+<rect x="302" y="304" width="238" height="162" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="421" y="329" font-family="Arial,sans-serif" font-size="14" fill="#1e293b" font-weight="bold" text-anchor="middle">Lockable pickup hatch #103</text>
+<rect x="359" y="346" width="123" height="65" rx="6" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+<text x="420" y="374" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Dose cup #6</text>
+<text x="420" y="397" font-family="Arial,sans-serif" font-size="14" fill="#1e293b" font-weight="normal" text-anchor="middle">Presence #102</text>
+<rect x="349" y="422" width="142" height="25" rx="4" fill="#a7f3d0" stroke="#059669" stroke-width="2"/>
+<text x="420" y="440" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="middle">Load cell #41</text>
+<text x="612" y="121" font-family="Arial,sans-serif" font-size="14" fill="#4338ca" font-weight="bold" text-anchor="start">ACCESS</text>
+<text x="612" y="150" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Locking refill lid #21</text>
+<text x="612" y="176" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Independent lid switch #46</text>
+<text x="612" y="202" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Missing-tray switch #86</text>
+<text x="612" y="253" font-family="Arial,sans-serif" font-size="14" fill="#4338ca" font-weight="bold" text-anchor="start">PICKUP</text>
+<text x="612" y="282" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Hatch position + latch sensing</text>
+<text x="612" y="308" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Motion stops before collection</text>
+<text x="612" y="334" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Uncollected dose blocks next release</text>
+<rect x="24" y="509" width="912" height="70" rx="10" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<text x="43" y="537" font-family="Arial,sans-serif" font-size="16" fill="#ffffff" font-weight="normal" text-anchor="start">ALL THREE: RTC + schedules • time/status display • LED + speaker • temperature + light</text>
+<text x="43" y="562" font-family="Arial,sans-serif" font-size="15" fill="#cbd5e1" font-weight="normal" text-anchor="start">Weight amplifier + filter • event log • interlocks • power checks • READY / REMOVED / MISSED / ERROR</text>
+</svg>
+</div>
 
-*Original annotated concept from the supplied draft. “Confirms dose taken” in the artwork means a proposed pickup/removal measurement, not proof of ingestion. The original image does not show every common-baseline component.*
+*Rotary carousel with a secured pickup bay and separate cup weighing.*
 
-| Feature set | IDs | Connection to needs |
-| --- | --- | --- |
-| Original concept bin | 1, 6, 7, 11, 12, 19, 20, 25, 26, 31, 36, 41, 43, 67, 71, 84, 90 | Preserves the original carousel, cup, chute, tray, motor, timing, sensing, reminder, and logging selections. |
-| Completed concept | Original bin + every shared-baseline row above + 102, 103, 114 | Adds cup presence, a secured retrieval area, and the uncollected-dose hold state. |
-| Distinct mechanism | 1, 6–7, 11–12, 20, 90 | Compact circular storage, gravity delivery, easier refill, and known motor position. |
+The carousel includes a removable keyed tray (#11–12/#87), chute (#7), and cup (#6) inside a retrieval bay with a monitored lockable hatch (#103). The cup sits on a load cell (#41), and a separate presence switch (#102) detects whether it is installed. The hatch needs latch and position sensing so the controller can secure an uncollected dose without closing a powered barrier on a hand.
 
-![Concept 1 completion schematic with required sensing, controls, and interlocks](image/ideation/concept-1-completion.svg)
-
-**Completion notes.** Add the time/status display, refill-lid sensor, temperature/light sensing, and missing-tray switch from the common baseline. Place the dispensing cup inside a retrieval bay with a monitored lockable hatch (#103). The existing open cup drawing needs this enclosure change to support securing an expired dose. The hatch is a design proposal; it still needs its own latch, position sensing, and pinch-safe behavior.
+The refill-lid switch (#46), missing-tray switch (#86), guarded motor, and home sensor (#90) support motion checks. The display, temperature and light sensors, and reminders provide the shared functions listed above.
 
 **Normal interaction.** The user sees/hears the reminder, presses once, and collects the dose when the mechanism has stopped. Cup presence (#102) distinguishes lifting the cup from removing pills while the cup stays in place. An ambiguous result is recorded as access or uncertain removal. Silencing the reminder does not mark the dose complete.
 
@@ -281,19 +311,49 @@ A removable circular tray stores preloaded doses. At the scheduled time, the dev
 
 The medication tray stays still. A motor moves a guarded cover so only the scheduled compartment can be reached. The user removes the medication directly instead of receiving it through a chute. This removes one pill-transfer step while keeping a distinct mechanical layout.
 
-![Annotated stationary tray and rotating shutter concept](image/ideation/concept-2-shutter.png)
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="concept-2-title" style="max-width:100%;height:auto;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px">
+<title id="concept-2-title">Concept 2 — Stationary tray with rotating shutter</title>
+<text x="28" y="38" font-family="Arial,sans-serif" font-size="25" fill="#1e293b" font-weight="bold" text-anchor="start">Concept 2 — Stationary tray with rotating shutter</text>
+<text x="28" y="64" font-family="Arial,sans-serif" font-size="15" fill="#475569" font-weight="normal" text-anchor="start">Proposed arrangement • schematic, not to scale</text>
+<rect x="24" y="86" width="545" height="400" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+<rect x="592" y="86" width="344" height="400" rx="10" fill="#eef2ff" stroke="#a5b4fc" stroke-width="2"/>
+<text x="296" y="120" font-family="Arial,sans-serif" font-size="20" fill="#1e293b" font-weight="bold" text-anchor="middle">Stationary dose tray + rotating shutter</text>
+<rect x="77" y="151" width="439" height="65" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 150.16666666666669 151 L 150.16666666666669 216" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 223.33333333333334 151 L 223.33333333333334 216" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 296.5 151 L 296.5 216" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 369.6666666666667 151 L 369.6666666666667 216" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 442.8333333333333 151 L 442.8333333333333 216" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<rect x="87" y="225" width="421" height="27" rx="4" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="298" y="245" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Isolated weighing platform #101</text>
+<rect x="225" y="264" width="146" height="34" rx="4" fill="#a7f3d0" stroke="#059669" stroke-width="2"/>
+<text x="298" y="286" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Load cell #41</text>
+<rect x="77" y="312" width="439" height="56" rx="4" fill="#eef2ff" stroke="#818cf8" stroke-width="2"/>
+<text x="297" y="337" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Motor + shutter bearings on fixed base</text>
+<text x="297" y="357" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="middle">Separate from the weighing platform</text>
+<rect x="106" y="389" width="380" height="71" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="296" y="414" font-family="Arial,sans-serif" font-size="17" fill="#1e293b" font-weight="bold" text-anchor="middle">Monitored access guard over opening</text>
+<text x="296" y="440" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Motion disabled while guard is open</text>
+<text x="612" y="121" font-family="Arial,sans-serif" font-size="14" fill="#4338ca" font-weight="bold" text-anchor="start">ACCESS</text>
+<text x="612" y="150" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Locking refill lid #21</text>
+<text x="612" y="176" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Independent lid switch #46</text>
+<text x="612" y="202" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Missing-tray switch #86</text>
+<text x="612" y="253" font-family="Arial,sans-serif" font-size="14" fill="#4338ca" font-weight="bold" text-anchor="start">MEASUREMENT</text>
+<text x="612" y="282" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">One compartment exposed at a time</text>
+<text x="612" y="308" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Compare stable before/after weight</text>
+<text x="612" y="334" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Hands clear before weight reading</text>
+<rect x="24" y="509" width="912" height="70" rx="10" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<text x="43" y="537" font-family="Arial,sans-serif" font-size="16" fill="#ffffff" font-weight="normal" text-anchor="start">ALL THREE: RTC + schedules • time/status display • LED + speaker • temperature + light</text>
+<text x="43" y="562" font-family="Arial,sans-serif" font-size="15" fill="#cbd5e1" font-weight="normal" text-anchor="start">Weight amplifier + filter • event log • interlocks • power checks • READY / REMOVED / MISSED / ERROR</text>
+</svg>
+</div>
 
-*Original annotated concept from the supplied draft. The revised concept adds whole-tray weighing (#101), which is not shown in the original image.*
+*Stationary tray on an isolated weighing platform, with a guarded access opening.*
 
-| Feature set | IDs | Connection to needs |
-| --- | --- | --- |
-| Original concept bin | 3, 4, 11, 12, 21, 23, 25, 26, 31, 36, 38, 46, 51, 56, 67, 71, 84, 90 | Preserves the stationary tray, moving cover, lock, lid sensing, environmental sensors, timing, and reminder selections. |
-| Completed concept | Original bin + every shared-baseline row above + 101, 104, 114 | Adds required weight sensing and explicit removal/uncertain states. |
-| Distinct mechanism | 3–4, 11–12, 21, 38, 90, 101 | Expose one compartment, avoid a transfer chute, and measure removal through tray mass change. |
+The stationary tray uses a load-cell platform (#101) to measure the change in weight when a dose is removed. The motor, shutter bearings, and enclosure attach to the fixed base, independently of the weighing platform. The load cell feeds the bridge amplifier and active filter (#42–43), then the PIC ADC. The controller compares stable readings before access and after the user's hand is clear.
 
-![Concept 2 completion schematic with required sensing, controls, and interlocks](image/ideation/concept-2-completion.svg)
-
-**Completion notes.** Put the stationary medication tray on an isolated load-cell platform (#101). The motor, shutter bearings, and enclosure attach to the base, so they do not bypass or preload the weighing structure unpredictably. The load cell feeds a custom bridge amplifier and active filter (#42–43), then the PIC ADC. The controller compares stable readings before opening and after the user's hand has been removed. Refill mode prevents new medication being mistaken for a dose event.
+The rotating shutter (#3) exposes one scheduled compartment. A monitored access guard disables movement while the user can reach inside. This guard is separate from the locking refill lid (#21) and its lid switch (#46). A missing-tray switch (#86) blocks operation when the tray is removed, and refill mode prevents added medication from being recorded as a dose event.
 
 **Normal interaction.** The reminder starts; one button press requests the scheduled opening. The cover moves only while the access opening is guarded. Once it stops, the user reaches through the access opening and removes the dose. Closing the access guard permits a stable weight reading and controlled shutter movement. If the opening cannot be safely closed, movement remains disabled and the device shows an error. The refill-lid switch remains separate from the access guard.
 
@@ -305,19 +365,52 @@ The medication tray stays still. A motor moves a guarded cover so only the sched
 
 A motor drives a removable straight cartridge along a guide. The scheduled compartment aligns with a fixed dispensing station and releases its dose into a weighed cup. Independent home, index, and end-position sensors help establish the carriage position.
 
-![Annotated linear cartridge dispenser concept](image/ideation/concept-3-linear.png)
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="concept-3-title" style="max-width:100%;height:auto;background:#f8fafc;border:1px solid #cbd5e1;border-radius:12px">
+<title id="concept-3-title">Concept 3 — Linear cartridge dispenser</title>
+<text x="28" y="38" font-family="Arial,sans-serif" font-size="25" fill="#1e293b" font-weight="bold" text-anchor="start">Concept 3 — Linear cartridge dispenser</text>
+<text x="28" y="64" font-family="Arial,sans-serif" font-size="15" fill="#475569" font-weight="normal" text-anchor="start">Proposed arrangement • schematic, not to scale</text>
+<rect x="24" y="86" width="545" height="400" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+<rect x="592" y="86" width="344" height="400" rx="10" fill="#eef2ff" stroke="#a5b4fc" stroke-width="2"/>
+<text x="292" y="123" font-family="Arial,sans-serif" font-size="19" fill="#1e293b" font-weight="bold" text-anchor="middle">Removable linear cartridge #2</text>
+<rect x="55" y="158" width="475" height="82" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<path d="M 134.16666666666669 158 L 134.16666666666669 240" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 213.33333333333334 158 L 213.33333333333334 240" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 292.5 158 L 292.5 240" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 371.6666666666667 158 L 371.6666666666667 240" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 450.8333333333333 158 L 450.8333333333333 240" stroke="#93c5fd" stroke-width="3" fill="none"/>
+<path d="M 55 256 L 530 256" stroke="#475569" stroke-width="3" fill="none"/>
+<text x="292" y="281" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="middle">Home #90 • carriage index / end switches #112</text>
+<path d="M 415 241 L 415 251" stroke="#475569" stroke-width="3" fill="none"/>
+<path d="M 415 293 L 415 303" stroke="#475569" stroke-width="3" fill="none"/>
+<text x="60" y="315" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="start">Fixed outlet +</text>
+<text x="60" y="338" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="start">one-way gate #5</text>
+<rect x="302" y="304" width="238" height="162" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+<text x="421" y="329" font-family="Arial,sans-serif" font-size="14" fill="#1e293b" font-weight="bold" text-anchor="middle">Lockable pickup hatch #103</text>
+<rect x="359" y="346" width="123" height="65" rx="6" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+<text x="420" y="374" font-family="Arial,sans-serif" font-size="16" fill="#1e293b" font-weight="normal" text-anchor="middle">Dose cup #6</text>
+<text x="420" y="397" font-family="Arial,sans-serif" font-size="14" fill="#1e293b" font-weight="normal" text-anchor="middle">Presence #102</text>
+<rect x="349" y="422" width="142" height="25" rx="4" fill="#a7f3d0" stroke="#059669" stroke-width="2"/>
+<text x="420" y="440" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="middle">Load cell #41</text>
+<text x="612" y="121" font-family="Arial,sans-serif" font-size="14" fill="#4338ca" font-weight="bold" text-anchor="start">ACCESS</text>
+<text x="612" y="150" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Locking refill lid #21</text>
+<text x="612" y="176" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Independent lid switch #49</text>
+<text x="612" y="202" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Missing-tray switch #86</text>
+<text x="612" y="253" font-family="Arial,sans-serif" font-size="14" fill="#4338ca" font-weight="bold" text-anchor="start">PICKUP</text>
+<text x="612" y="282" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Hatch position + latch sensing</text>
+<text x="612" y="308" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Motion stops before collection</text>
+<text x="612" y="334" font-family="Arial,sans-serif" font-size="15" fill="#1e293b" font-weight="normal" text-anchor="start">Uncollected dose blocks next release</text>
+<rect x="24" y="509" width="912" height="70" rx="10" fill="#0f172a" stroke="#0f172a" stroke-width="2"/>
+<text x="43" y="537" font-family="Arial,sans-serif" font-size="16" fill="#ffffff" font-weight="normal" text-anchor="start">ALL THREE: RTC + schedules • time/status display • LED + speaker • temperature + light</text>
+<text x="43" y="562" font-family="Arial,sans-serif" font-size="15" fill="#cbd5e1" font-weight="normal" text-anchor="start">Weight amplifier + filter • event log • interlocks • power checks • READY / REMOVED / MISSED / ERROR</text>
+</svg>
+</div>
 
-*Original annotated concept from the supplied draft. Its index-switch label uses #49, but the brainstorm defines #49 as a lid switch. The revised design uses #112 for carriage index/end sensing and retains #46 for the refill lid. “Confirms dose taken” is interpreted as removal evidence only.*
+*Linear cartridge with dedicated carriage-position switches and a secured, weighed pickup cup.*
 
-| Feature set | IDs | Connection to needs |
-| --- | --- | --- |
-| Original concept bin | 2, 5, 6, 7, 11, 17, 19, 20, 26, 31, 36, 41, 43, 49, 66, 71, 84, 90, 99 | Preserves the linear cartridge, gate, cup, chute, weighing, timing, reminder, and limit-sensing selections. |
-| Completed concept | Original bin + every shared-baseline row above + 102, 103, 112, 114 | Adds independent lid sensing, dedicated position switches, cup presence, secured pickup, and missed-dose handling. |
-| Distinct mechanism | 2, 5–7, 17, 90, 99, 112 | Move compartments in a straight line, reduce outlet obstruction, and stop before the carriage reaches its travel limit. |
+The linear cartridge has a one-way gate (#5), wide outlet (#17), and chute (#7) leading into a cup (#6). The cup sits on a load cell (#41) inside a monitored lockable pickup hatch (#103), with a separate cup-presence switch (#102). An uncollected dose blocks the next release (#114).
 
-![Concept 3 completion schematic with required sensing, controls, and interlocks](image/ideation/concept-3-completion.svg)
-
-**Completion notes.** Add the time/status display, temperature/light monitoring, missing-tray detection, and a locked refill lid. Use a separate lid sensor; do not reuse the carriage limit signal as evidence that the lid is closed. The original buzzer (#66) remains an alternative, while the revised common baseline uses an adjustable speaker reminder (#67–68). Add the secured cup bay used in Concept 1.
+A home sensor (#90) and dedicated carriage index/end switches (#112) track movement. The lever lid switch (#49) checks the refill lid only. A missing-tray switch (#86), guarded drivetrain, time/status display, environmental sensors, and adjustable speaker reminders (#67–68) complete the proposed design.
 
 **Normal interaction.** After the reminder and one button press, the controller checks the cup, tray, lid, and mechanism position. The motor aligns the scheduled compartment, the dose enters the cup, and the user collects it after motion stops. Missing-cup and weight readings are interpreted together before recording the interaction.
 
@@ -339,7 +432,7 @@ A motor drives a removable straight cartridge along a guide. The scheduled compa
 | Expected advantage | Compact storage and separate weighing cup | Fewer pill-transfer surfaces | Straightforward layout and position references |
 | Main uncertainty | Indexing, chute flow, and hatch design | Resolving dose mass against full tray mass | Travel length, alignment, and gate design |
 
-No final concept is selected here. All three carry the same required sensing and interface functions. The carousel is a useful first candidate for a mechanism experiment because it combines compact storage with a separate weighing cup, but that is a suggested test order rather than a recorded team decision.
+We have not selected a final concept. The main differences to test are dispensing reliability, weight measurement, and mechanism size.
 
 ### Ideas retained for later use
 
@@ -347,31 +440,40 @@ All original and refined features remain in the tables above. Alternatives inclu
 
 Caregiver phone notifications and extended battery operation remain unresolved development topics. The wired status demonstration (#109) is not equivalent to a working remote notification service, and saved settings or RTC backup alone do not keep a motorized dispenser operating during an outage.
 
-## 5. One-page process discussion
+## 5. Process discussion
 
-**Session facts to complete before submission:** [CONFIRM PARTICIPANTS]; [CONFIRM HOW THE TEAM MET]; [CONFIRM WHO RECORDED IDEAS AND THE TOOLS USED]. The public team roster lists Sam Kholmuminov, Natalia Castillo-Diaz, Taylor Callo, and Arya Padiyar, but a roster does not establish who attended this brainstorming session.
+We discussed our medication-storage ideas in an online meeting. Our starting point was the user-needs research and product requirements for Project Aurora. We focused on older adults who take several scheduled medications and caregivers who help with refilling and setup. The main problems we wanted to address were confusing controls, missed reminders, repeated dispensing, and difficulty collecting medication.
 
-Our design ideation focuses on helping a user manage scheduled medication without creating a confusing daily routine. The intended users include older adults who take several medications, along with caregivers who refill the device and help change settings. The starting requirements come from our User Needs and Benchmarking assignment and our Product Requirements assignment. The benchmarking page identifies recurring concerns such as confusing controls, unreliable reminders, medication access, and dispensing problems. The requirements page turns those concerns into functions that can be checked with a prototype.
+The ideas were organized in a Word document using a table with an idea number, the related need, a feature, and a short explanation of how it could work. The list contains 100 entries. Some describe different ways to solve the same problem, such as mechanical, magnetic, and optical lid sensors. Others describe supporting functions, such as storing a schedule or checking whether the tray is installed. Keeping the full list lets us return to an alternative if another approach proves difficult to build.
 
-The working record contains 100 numbered feature ideas in a table with the related need and a short explanation. The table is retained before the grouped and concept stages so that an idea is not lost just because it is not selected. Some ideas are alternatives to the same function, such as different cap sensors. Others are supporting details, such as a keyed tray or a software event flag. Similar entries are preserved in the original record rather than being silently removed.
+We grouped the ideas into seven areas: storage and refill, dispensing and mechanical safety, scheduling, removal and access sensing, environmental monitoring, the user interface, and reliability and power. This made it easier to see which functions each concept needed and which ideas could work together. The highest-priority needs guided the shortlist, especially controlled medication access, accurate timing, understandable reminders, and detection of dose removal.
 
-This revision uses the existing 1–5 user-need priorities and the Must/Should requirement labels to focus the concepts. Preventing repeated dispensing, maintaining the correct time, detecting medication removal, and giving understandable reminders receive the most attention. Refill, cleaning, power recovery, and caregiver support are also considered. The course project description adds another constraint: the final prototype must combine distinct student-designed sensing and actuation subsystems rather than rely on ready-made peripheral boards.
+The shortlist compares requirement fit, feasibility, course fit, integration, and reliability and safety. We describe why each feature is useful rather than assigning numerical scores without a complete scoring breakdown. We also combine the two keyed-tray ideas, #12 and #87, into one feature during refinement while keeping both in the initial list.
 
-The features are organized into seven groups: medication storage, mechanism and mechanical safety, scheduling, removal and access sensing, environmental monitoring, interface and reminders, and reliability and power. This makes it easier to compare ideas that solve similar problems. The original shortlists use requirement fit, feasibility, course fit, integration, and reliability/safety, with a maximum total of 25. Because the source record does not show the individual criterion scores, the totals remain provisional. They help identify promising combinations but are not test results.
+The three resulting concepts are a rotary carousel, a stationary tray with a rotating shutter, and a linear cartridge. The carousel and linear cartridge transfer medication into a separate cup. The stationary tray gives direct access to one compartment. Comparing these approaches highlighted two important questions: how to detect a small dose being removed, and how to secure a dose that is not collected during its scheduled window.
 
-Three combinations are then compared: a rotary carousel, a stationary tray with a rotating shutter, and a linear cartridge. They share scheduling, reminders, access sensing, and environmental monitoring, but provide medication through different mechanisms. Reviewing the combinations exposed missing details, including weight sensing in the shutter concept and handling an uncollected dose. The proposed refinements address these gaps while preserving the original feature bank and concept illustrations. Each concept still needs mechanical and sensor testing before a final selection can be justified.
+The proposed refinements address those questions with an isolated weighing platform for the stationary tray and monitored pickup hatches for the two cup-based concepts. Each design also needs independent lid sensing, motion interlocks, and clear event records. The record should distinguish access, removal, missed collection, and uncertain readings because these sensors cannot confirm swallowing.
 
-The original draft and prior team pages are the documented sources of the initial ideas. This revision also checks the assignment instructions, Fall 2026 project description, and course sequence requirements. No additional reading, meeting attendance, team vote, or completed test is claimed without a record. Completing the session facts above will make this discussion an accurate account of how the team performed the work.
+We have not chosen a final design. The next step is to test the dispensing mechanisms and weight measurements using test objects, then compare the space, reliability, and build effort of each option. We will use those results to choose a concept and develop the subsystem assignments and board connections in the block-diagram work.
 
 ## 6. Development and verification questions
 
-1. What is the smallest test-dose mass the weight circuit can reliably distinguish, particularly with the full stationary tray?
+1. Can the weight sensor reliably detect the smallest dose we plan to test, including when the stationary tray is full?
 2. Can each mechanism complete the required 20 consecutive cycles without a jam using the selected test objects?
-3. What happens if power is lost during movement or just after medication is released? Can restart avoid a second release?
+3. What happens if power is lost during movement or just after medication is released? Can the device restart without releasing the same dose again?
 4. Can the cap/lid, missing-tray, missing-cup, and position sensors be tested independently?
 5. How will the pickup hatch or shutter remain secure without moving against a user's hand?
-6. What medication-specific temperature/light limits will be used, and how will the sensors be calibrated?
-7. Which four distinct subsystem functions will the team assign to members, and what signals will cross the required connector?
+6. What temperature and light limits will we use for the stored medication, and how will we check the sensors against known readings?
+7. How will we divide the subsystem work among teammates, and what signals will the boards need to share?
 8. What level of backup operation and caregiver notification can the prototype actually demonstrate?
 
-Planned checks include the ±1 minute timing test, four schedules in one day, schedule retention after power cycling, duplicate-event rejection, removal and lid-state demonstrations, sound-and-light reminders, adjustable settings, interlock fault tests, and the full assembled-system check. These are proposed verification activities, not completed results.
+Planned checks include the ±1 minute timing test, four schedules in one day, schedule retention after power cycling, duplicate-event rejection, removal and lid-state demonstrations, sound-and-light reminders, adjustable settings, interlock fault tests, and the full assembled-system check. We will record the results when we test the prototype.
+
+## References
+
+- [Design Ideation assignment](https://embedded-systems-design.bitbucket.io/304/team-assignments/design-ideation/)
+- [Fall 2026 EGR 304 Project Description](https://embedded-systems-design.bitbucket.io/304/course-info/project-description/)
+- [Course Sequence Requirements](https://embedded-systems-design.bitbucket.io/3x4/course-sequence-requirements/)
+- [Team 102 User Needs and Benchmarking](03-User-Needs-and%20Benchmarking.md)
+- [Team 102 Product Requirements](04-Product-Requirements.md)
+- Team 102, *Design Ideation.docx*. Initial brainstorming notes and concept sketches. The 100-entry idea list and seven functional groups are retained above.
