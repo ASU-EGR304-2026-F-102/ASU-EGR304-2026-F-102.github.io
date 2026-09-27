@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1060" width="1600" height="1060"><rect width="100%" height="100%" fill="#f4f7fb"/><style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#16283e}.title{font-size:32px;font-weight:bold}.sub{font-size:18px}.head{font-size:21px;font-weight:bold}.body{font-size:17px}</style>
+<text x="36" y="51" class="title">Stage 2 | Functional grouping</text>
+<text x="36" y="85" class="sub">Reconstructed from the grouping and top-feature tables in the supplied Word draft.</text>
+<rect x="30" y="120" width="755" height="211" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="45" y="152" class="head">1. Medication storage, security, and refill</text>
+<text x="45" y="185" class="body">Ideas: #1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #11, #12, #13, #14,</text>
+<text x="45" y="209" class="body">#15, #16, #17, #21, #22, #23, #24</text>
+<text x="45" y="300" class="body">Original shortlist: #1, #11, #12</text>
+<rect x="815" y="120" width="755" height="211" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="830" y="152" class="head">2. Dispensing mechanism and mechanical safety</text>
+<text x="830" y="185" class="body">Ideas: #18, #19, #20, #25, #76, #86, #87, #88, #89, #90, #96, #99,</text>
+<text x="830" y="209" class="body">#100</text>
+<text x="830" y="300" class="body">Original shortlist: #90, #20, #19</text>
+<rect x="30" y="346" width="755" height="211" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="45" y="378" class="head">3. Scheduling, dose logic, and local data</text>
+<text x="45" y="411" class="body">Ideas: #26, #27, #28, #29, #30, #31, #32, #33, #34, #35, #36, #37,</text>
+<text x="45" y="435" class="body">#38, #39, #40, #91, #95</text>
+<text x="45" y="526" class="body">Original shortlist: #26, #36, #37</text>
+<rect x="815" y="346" width="755" height="211" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="830" y="378" class="head">4. Medication removal and access sensing</text>
+<text x="830" y="411" class="body">Ideas: #41, #42, #43, #44, #45, #46, #47, #48, #49, #50</text>
+<text x="830" y="526" class="body">Original shortlist: #41, #43, #45</text>
+<rect x="30" y="572" width="755" height="211" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="45" y="604" class="head">5. Environmental monitoring</text>
+<text x="45" y="637" class="body">Ideas: #51, #52, #53, #54, #55, #56, #57, #58, #59, #60</text>
+<text x="45" y="752" class="body">Original shortlist: #51, #56, #55</text>
+<rect x="815" y="572" width="755" height="211" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="830" y="604" class="head">6. Interface, reminders, and accessibility</text>
+<text x="830" y="637" class="body">Ideas: #61, #62, #63, #64, #65, #66, #67, #68, #69, #70, #71, #72,</text>
+<text x="830" y="661" class="body">#73, #74, #75, #77, #78, #79, #80, #81, #82, #83</text>
+<text x="830" y="752" class="body">Original shortlist: #67, #71, #72</text>
+<rect x="30" y="798" width="755" height="211" rx="8" fill="#fff" stroke="#c9d4e1"/>
+<text x="45" y="830" class="head">7. Reliability, power, and electrical protection</text>
+<text x="45" y="863" class="body">Ideas: #84, #85, #92, #93, #94, #97, #98</text>
+<text x="45" y="978" class="body">Original shortlist: #84, #85, #94</text>
+</svg>
