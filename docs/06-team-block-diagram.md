@@ -47,44 +47,46 @@ Arrows point toward the board that receives each signal. Gray pins are spare. Ye
 
 All board-to-board signals use 3.3 V logic and are active HIGH. Every input that comes from another board has a 100 kΩ pull-down resistor.
 
+Pins 1–5 are digital, pins 6–7 are analog, and pin 8 is ground on every cable.
+
 ### Cable 1: Hub J1 ↔ Weight board J1
 
-| Pin | Type | Signal | Sent by | Hub pin | Weight pin | Meaning |
-|:-:|:-:|---|:-:|:-:|:-:|---|
-| 1 | digital | DOSE_READY | Hub | RD0 | RD0 | A dose is due |
-| 2 | digital | DOSE_REMOVED | Weight | RD1 | RD1 | The dose was lifted out of the cup |
-| 3 | digital | WEIGHT_FAULT | Weight | RD2 | RD2 | The weight reading is invalid |
-| 4 | digital | TARE_REQ | Hub | RD3 | RD3 | Re-zero the scale after a refill |
-| 5 | digital | HEARTBEAT_A | Weight | RD4 | RD4 | 1 Hz "board is alive" signal |
-| 6 | analog | WEIGHT_LEVEL | Weight | RA0 | RA2 | 0–3.3 V = 0–100 g in the cup |
-| 7 | analog | spare | — | — | — | Not used |
-| 8 | GND | GND | — | GND | GND | Shared ground |
+| Pin | Signal | From | Hub | Weight | Meaning |
+|:-:|---|:-:|:-:|:-:|---|
+| 1 | DOSE_READY | Hub | RD0 | RD0 | Dose is due |
+| 2 | DOSE_REMOVED | Weight | RD1 | RD1 | Dose lifted out |
+| 3 | WEIGHT_FAULT | Weight | RD2 | RD2 | Bad reading |
+| 4 | TARE_REQ | Hub | RD3 | RD3 | Re-zero scale |
+| 5 | HEARTBEAT_A | Weight | RD4 | RD4 | 1 Hz "alive" |
+| 6 | WEIGHT_LEVEL | Weight | RA0 | RA2 | 0–3.3 V = 0–100 g |
+| 7 | spare | — | — | — | Not used |
+| 8 | GND | — | GND | GND | Ground |
 
 ### Cable 2: Hub J2 ↔ Cap board J1
 
-| Pin | Type | Signal | Sent by | Hub pin | Cap pin | Meaning |
-|:-:|:-:|---|:-:|:-:|:-:|---|
-| 1 | digital | DOSE_READY | Hub | RD5 | RD0 | A dose is due |
-| 2 | digital | LID_OPEN | Cap | RD6 | RD1 | The cap is off |
-| 3 | digital | LID_FAULT | Cap | RD7 | RD2 | Magnet missing or sensor fault |
-| 4 | digital | spare | — | — | — | Not used |
-| 5 | digital | HEARTBEAT_B | Cap | RE0 | RD4 | 1 Hz "board is alive" signal |
-| 6 | analog | spare | — | — | — | Not used |
-| 7 | analog | spare | — | — | — | Not used |
-| 8 | GND | GND | — | GND | GND | Shared ground |
+| Pin | Signal | From | Hub | Cap | Meaning |
+|:-:|---|:-:|:-:|:-:|---|
+| 1 | DOSE_READY | Hub | RD5 | RD0 | Dose is due |
+| 2 | LID_OPEN | Cap | RD6 | RD1 | Cap is off |
+| 3 | LID_FAULT | Cap | RD7 | RD2 | Magnet/sensor fault |
+| 4 | spare | — | — | — | Not used |
+| 5 | HEARTBEAT_B | Cap | RE0 | RD4 | 1 Hz "alive" |
+| 6 | spare | — | — | — | Not used |
+| 7 | spare | — | — | — | Not used |
+| 8 | GND | — | GND | GND | Ground |
 
 ### Cable 3: Hub J3 ↔ Environment board J1
 
-| Pin | Type | Signal | Sent by | Hub pin | Environment pin | Meaning |
-|:-:|:-:|---|:-:|:-:|:-:|---|
-| 1 | digital | spare | — | — | — | Not used |
-| 2 | digital | TEMP_ALERT | Environment | RE1 | RD1 | Temperature out of the safe range |
-| 3 | digital | LIGHT_ALERT | Environment | RE2 | RD2 | Too much light for too long |
-| 4 | digital | spare | — | — | — | Not used |
-| 5 | digital | HEARTBEAT_D | Environment | RF2 | RD4 | 1 Hz "board is alive" signal |
-| 6 | analog | TEMP_LEVEL | Environment | RA1 | RA2 | 0–3.3 V = 0–50 °C |
-| 7 | analog | spare | — | — | — | Not used |
-| 8 | GND | GND | — | GND | GND | Shared ground |
+| Pin | Signal | From | Hub | Env. | Meaning |
+|:-:|---|:-:|:-:|:-:|---|
+| 1 | spare | — | — | — | Not used |
+| 2 | TEMP_ALERT | Env. | RE1 | RD1 | Too hot/cold |
+| 3 | LIGHT_ALERT | Env. | RE2 | RD2 | Too much light |
+| 4 | spare | — | — | — | Not used |
+| 5 | HEARTBEAT_D | Env. | RF2 | RD4 | 1 Hz "alive" |
+| 6 | TEMP_LEVEL | Env. | RA1 | RA2 | 0–3.3 V = 0–50 °C |
+| 7 | spare | — | — | — | Not used |
+| 8 | GND | — | GND | GND | Ground |
 
 ## Next Steps
 
