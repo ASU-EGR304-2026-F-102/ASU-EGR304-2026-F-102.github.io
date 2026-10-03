@@ -1,8 +1,5 @@
 ---
-title: Block Diagram, Process Diagram, and Message Structure
-hide:
-navigation
----
+title: "Block Diagram, Process Diagram, and Message Structure"
 Block Diagram, Process Diagram, and Message Structure
 Overview
 This page shows how the four Project Aurora boards connect. Each teammate designs their own PCB around a Microchip PIC18F57Q43 Curiosity Nano, powered by a 9 V barrel jack and a 5 V linear regulator. The boards share information only through 8-pin ribbon cables that follow the course pinout: pins 1–5 digital, pins 6–7 analog, and pin 8 ground.
