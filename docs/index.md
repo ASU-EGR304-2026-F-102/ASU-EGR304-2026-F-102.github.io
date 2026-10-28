@@ -1,24 +1,24 @@
----
-title: Home
-tags:
-- team-report
-- EGR304
----
-<center>
-<font size="8">Project Aurora<br>
-<font size="5">Team 102<br>
-**Submission: 05, 12, 2006**<br>
-Fall 2026<br>
-<font size="4">Arizona State University<br>
-**EGR 304**<br>
-Zane Reynolds<br>
-  
-<p align="center">
-  <img src="image/team102-qr.png" alt="QR code to Project Aurora website" width="180"><br>
-  <em>Scan to open our website</em>
-</p>
+<div style="text-align:center; margin: 0 0 2.5rem;">
 
-</center>
+  <h1 style="font-size:2.6rem; font-weight:600; margin:0.2rem 0 0.3rem;">Project Aurora</h1>
+  <p style="font-size:1.15rem; color:#555; margin:0 0 1.2rem;">
+    A smart medication holder that reminds you when a dose is due
+    and checks that it was taken
+  </p>
+
+  <hr style="width:60px; border:0; border-top:3px solid #2196F3; margin:0 auto 1.2rem;">
+
+  <p style="font-size:1rem; margin:0.2rem 0;"><b>Team 102</b> · EGR 304 Embedded Systems Design · Fall 2026</p>
+  <p style="font-size:0.95rem; color:#555; margin:0.2rem 0;">Arizona State University · Instructor: Zane Reynolds</p>
+
+  <p style="font-size:0.95rem; margin:1rem 0 0;">
+    Arya Padiyar · Natalia Castillo-Diaz · Taylor Callo · Sam Kholmuminov
+  </p>
+
+  <img src="image/team102-qr.png" alt="QR code to the Project Aurora website" width="150" style="margin-top:1.5rem;">
+  <p style="font-size:0.85rem; color:#777; margin:0.3rem 0 0;">Scan to open this site</p>
+
+</div>
 
 ## Team Introduction
 Team 102 is developing Project Aurora as part of EGR 304: Embedded Systems Design at Arizona State University. Our team is working collaboratively to identify user needs, establish product requirements, develop design concepts, and integrate the hardware and software needed for the final embedded system.
