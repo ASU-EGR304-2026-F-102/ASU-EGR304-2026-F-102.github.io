@@ -13,6 +13,10 @@ Fall 2026<br>
 **EGR 304**<br>
 Zane Reynolds<br>
   
+<p align="center">
+  <img src="image/team102-qr.png" alt="QR code to Project Aurora website" width="180"><br>
+  <em>Scan to open our website</em>
+</p>
 
 </center>
 
