@@ -38,8 +38,8 @@ Each sensing board sends a 1 Hz heartbeat on pin 5. If a board stops, the hub sh
 
 ## Team Block Diagram
 
-![Team 102 block diagram](image/team102-block-diagram.png)
-**Figure 1:** Team block diagram. Click the image to enlarge it. Source file: [team102-block-diagram.drawio](image/team102-block-diagram_1.drawio)
+[![Team 102 block diagram](image/team102-block-diagram.drawio.png)](image/team102-block-diagram.drawio.png)
+**Figure 1:** Team block diagram. Click the image to enlarge it. Source file: [team102-block-diagram.drawio](image/team102-block-diagram.drawio)
 
 Arrows point toward the board that receives each signal. Gray pins are spare. Yellow "Manufacturer / Part #" fields will be filled in by each owner during component selection.
 
